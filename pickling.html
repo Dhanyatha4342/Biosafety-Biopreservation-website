@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="final.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    
+        
+    <title>Document</title>
+</head>
+<body>
+            <section class="header">
+                <nav>
+                 <a href="index.html"><img class="logo"src="rv-logo.png"></a>
+                 <p class="inst-name">R V College of Engineering</p>
+                 <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+                <div class = "sub-pages">
+                    <a class="sub-link" href="https://app.mypantrytracker.com/home" ><b>Virtual Pantry</b></a>
+                    <a class = "sub-link" href="Canning.html"><b>Preserve By</b></a>
+                    <a class="sub-link" href="resources.html" ><b>Resources</b></a>
+                    <a class="sub-link" href="faq.html" ><b>FAQs</b></a>
+                    <a class="sub-link" href="blog.html" ><b>Blog</b></a>
+                    <a class="sub-link" href="donations.html"><b>Donate</b></a>
+                    <a class="sub-link" href="contact.html" ><b>Contact</b></a>
+                </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+           </nav> 
+        </div>
+    
+    </section>
+    <section class="image-section">
+        
+        <div class="image-container">
+            <div class="overlay"></div>   
+            <img src="pickling.jpg" alt="PICKLING" class="background-image">
+            <h1 class="image-heading">PICKLING</h1>
+        </div>
+    </section>
+
+
+
+    <section class="content-container">
+        <!-- Left menu section -->
+        <div class="menu">
+            <h2>PICKLING</h2>
+            <ul>
+                
+                <li><a href="#" onclick="showContent('General Information on Pickling')">General Information on Pickling</a></li>
+                <li><a href="#" onclick="showContent('Chutney')">Chutney</a></li>
+                <li><a href="#" onclick="showContent('Pickles for Special Diets')">Pickles for Special Diets</a></li>
+                <li><a href="#" onclick="showContent('Pickled Eggs')">Pickled Eggs</a></li>
+                <li><a href="#" onclick="showContent('Relishes, Salads')">Relishes, Salads</a></li>
+                <li><a href="#" onclick="showContent('Vegetable Pickles')">Vegetable Pickles</a></li>
+                <li><a href="#" onclick="showContent('Fruit Pickles')">Fruit Pickles</a></li>
+            </ul>
+        </div>
+
+        <!-- Right content section -->
+        <div class="content" id="content">
+            <h1>PICKLING</h1>
+            <p>Pickled products truly add spice to meals and snacks. The skillful blending of spices, sugar and vinegar with fruits and vegetables creates a crisp, firm texture and a pungent, sweet-sour flavor. Although food markets today offer a wide variety of pickles and relishes, many consumers like to make their own pickled products when garden vegetables and fresh fruits are in abundant supply. Various types of pickled products can be made depending on the ingredients used and methods of preparation.</p>
+
+            </div>
+    </section>
+
+    <script>
+        function toggleSubMenu(id) {
+            const submenu = document.getElementById(id);
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function showContent(section) {
+            const content = document.getElementById('content');
+            if (section === 'General Information on Pickling') {
+                content.innerHTML = `
+                    <h1>General Information on Pickling</h1>
+                    <p>The many varieties of pickled and fermented foods are classified by ingredients and method of preparation.
+
+<br><br>Regular dill pickles and sauerkraut are fermented and cured for about 3 weeks. Refrigerator dills are fermented for about 1 week. During curing, colors and flavors change and acidity increases. Fresh-pack or quick-process pickles are not fermented; some are brined several hours or overnight, then drained and covered with vinegar and seasonings. Fruit pickles usually are prepared by heating fruit in a seasoned syrup acidified with either lemon juice or vinegar. Relishes are made from chopped fruits and vegetables that are cooked with seasonings and vinegar.
+
+<br><br>Be sure to remove and discard a 1/16-inch slice from the blossom end of fresh cucumbers. Blossoms may contain an enzyme which causes excessive softening of pickles.
+
+<br><br>Caution: The level of acidity in a pickled product is as important to its safety as it is to taste and texture.
+
+<br>Do not alter vinegar, food, or water proportions in a recipe or use a vinegar with unknown acidity.
+<br>Use only recipes with tested proportions of ingredients.
+<br>There must be a minimum, uniform level of acid throughout the mixed product to prevent the growth of botulinum bacteria.
+<br><br>Ingredients
+
+<br>Select fresh, firm fruits or vegetables free of spoilage. Measure or weigh amounts carefully, because the proportion of fresh food to other ingredients will affect flavor and, in many instances, safety.
+
+<br>Use canning or pickling salt. Noncaking material added to other salts may make the brine cloudy. Since flake salt varies in density, it is not recommended for making pickled and fermented foods. White granulated and brown sugars are most often used. Corn syrup and honey, unless called for in reliable recipes, may produce undesirable flavors. White distilled and cider vinegars of 5 percent acidity (50 grain) are recommended. White vinegar is usually preferred when light color is desirable, as is the case with fruits and cauliflower.
+
+<br>Pickles with reduced salt content
+
+<br>Recipes for pickles with reduced sodium content are provided in Guide 6 of the USDA Complete Guide to Home Canning.
+
+<br><br>In the making of fresh-pack pickles, cucumbers are acidified quickly with vinegar. Use only tested recipes formulated to produce the proper acidity. While these pickles may be prepared safely with reduced or no salt, their quality may be noticeably lower. Both texture and flavor may be slightly, but noticeably, different than expected. You may wish to make small quantities first to determine if you like them.
+
+<br><br>However, the salt used in making fermented sauerkraut and brined pickles not only provides characteristic flavor but also is vital to safety and texture. In fermented foods, salt favors the growth of desirable bacteria while inhibiting the growth of others. Caution: Do not attempt to make sauerkraut or fermented pickles by cutting back on the salt required.
+
+<br><br>Firming agents
+
+<br>Alum may be safely used to firm fermented pickles. However, it is unnecessary and is not included in the recipes in this publication. Alum does not improve the firmness of quick-process pickles. The calcium in lime definitely improves pickle firmness. Food-grade lime may be used as a lime-water solution for soaking fresh cucumbers 12 to 24 hours before pickling them. Excess lime absorbed by the cucumbers must be removed to make safe pickles. To remove excess lime, drain the lime-water solution, rinse, and then resoak the cucumbers in fresh water for 1 hour. Repeat the rinsing and soaking steps two more times. To further improve pickle firmness, you may process cucumber pickles for 30 minutes in water at 180°F. This process also prevents spoilage, but the water temperature should not fall below 180°F. Use a candy or jelly thermometer to check the water temperature.
+
+<br><br>Preventing spoilage
+
+<br>Pickle products are subject to spoilage from microorganisms, particularly yeasts and molds, as well as enzymes that may affect flavor, color, and texture. Processing the pickles in a boiling-water canner will prevent both of these problems. Standard canning jars and self-sealing lids are recommended. Processing times and procedures will vary according to food acidity and the size of food pieces.</p>
+                `;
+                       
+            } else if (section === 'Chutney') {
+                content.innerHTML = `
+                    <h1>Chutney</h1>
+                    <h2>Mango Chutney</h2>
+                    <p>11 cups or 4 pounds chopped unripe (hard) mango, either Tommy Atkins or Kent varieties (about 9 to 10 large whole mangoes, or 6 pounds, as purchased)
+<br>2½ cups or ¾ pound finely chopped yellow onion (about 1 pound onions as purchased)
+<br>2½ tablespoons grated fresh ginger
+<br>1½ tablespoons finely chopped fresh garlic
+<br>4½ cups sugar
+<br>3 cups white distilled vinegar (5%)
+<br>2½ cups golden raisins
+<br>1½ teaspoon canning salt
+<br>4 teaspoons chili powder
+<br><br>Caution: Handling green mangoes may irritate the skin of some people in the same way as poison ivy. (They belong to the same plant family.) To avoid this reaction, wear plastic or rubber gloves while working with raw green mango. Do not touch your face, lips or eyes after touching or cutting raw green mangoes until all traces are washed away.
+
+<br><br>Yield: About 6 pint jars.
+
+<br><br>Please read Using Boiling Water Canners before beginning. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>  	1.  	Wash and rinse pint or half-pint canning jars; keep hot until ready to use. Prepare lids according to manufacturer's directions.
+ 
+ <br> 	2.	Wash all produce well. Peel, core and chop mangoes into ¾-inch cubes. Chop mango cubes in food processor, using 6 one-second pulses per food processor batch. (Do not puree or chop too finely.) By hand, peel and dice onion, finely chop garlic, and grate ginger.
+ 
+ <br> 	3.	Mix sugar and vinegar in an 8- to 10-quart stockpot. Bring to a boil, and boil 5 minutes. Add all other ingredients and bring back to a boil. Reduce heat and simmer 25 minutes, stirring occasionally.
+ 
+<br>  	4.	Fill hot chutney into clean, hot pint or half-pint jars, leaving ½-inch headspace. Remove air bubbles and adjust headspace if needed. Wipe rims of jars with a dampened, clean paper towel; adjust two-piece metal canning lids.
+ 
+ <br> 	5.	Process in a boiling water canner according to the recommendations in Table 1. Let cool, undisturbed, for 12 to 24 hours and check for seals.</p>
+                `;
+            } else if (section === 'Pickles for Special Diets') {
+                content.innerHTML = `
+                    <h1>Pickles for Special Diets</h1>
+                    <h2>No-Sugar Added Sweet Cucumber Slices</h2>
+                    <p>3½ pounds of pickling cucumbers
+<br>boiling water to cover sliced cucumbers
+<br>4 cups cider vinegar (5%)
+<br>3 cups Splenda®
+<br>1 tablespoon canning salt
+<br>1 cup water
+<br>1 tablespoon mustard seed
+<br>1 tablespoon whole allspice
+<br>1 tablespoon celery seed
+<br>4 one-inch cinnamon sticks
+<br>Yield: About 4 or 5 pint jars.
+
+<br><br>Please read Using Boiling Water Canners before beginning. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>Procedure:
+ 
+
+ <br> 	1.  	Wash and rinse pint canning jars; keep hot until ready to use. Prepare lids according to manufacturer's directions.
+ 
+  <br>	2.	Wash cucumbers. Slice 1/16th-inch off the blossom ends and discard. Slice cucumbers into ¼-inch thick slices. Pour boiling water over the cucumber slices and let stand 5 to 10 minutes. Drain off the hot water and pour cold water over the cucumbers. Let cold water run continuously over the cucumber slices, or change water frequently until cucumbers are cooled. Drain slices well.
+ 
+ <br> 	3.	Mix vinegar, 1 cup water, Splenda® and all spices in a 10-quart Dutch oven or stockpot. Bring to a boil. Add drained cucumber slices carefully to the boiling liquid. Return to a boil.
+ 
+ <br> 	4.	Place one cinnamon stick in each jar, if desired. With a slotted spoon, fill hot pickle slices into clean, hot pint jars, leaving ½-inch headspace. Cover with boiling hot pickling brine, leaving ½-inch headspace. Remove air bubbles and adjust headspace if needed. Wipe rims of jars with a dampened clean paper towel; apply two-piece metal canning lids.
+ 
+ <br> 	5.	Process in a boiling water canner according to the recommendations in Table 1. Let cool, undisturbed, 12 to 24 hours and check for seals.</p>
+                `;
+            } else if (section === 'Pickled Eggs') {
+                content.innerHTML = `
+                    <h1>Pickled Eggs</h1>
+                    <p>There are no home canning directions for pickled eggs.  All of the following pickled egg recipes are for storage in the refrigerator.  Pickled eggs should never be at room temperature except for serving time, when they should be limited to no more than 2 hours in the temperature danger zone of 40 to 140 degrees F.
+
+<br>Caution:  Home pickled eggs stored at room temperature have caused botulism.  For the report from the Centers for Disease Control and Prevention (CDC), see http://www.cdc.gov/mmwr/preview/mmwrhtml/mm4934a2.htm The Editorial Note in this report cautions against room temperature pickling and storage, also.  The CDC further cautions that to reduce the risk for botulism when pickling, food items should be washed and cooked adequately, and utensils, containers, and other surfaces in contact with food, including cutting boards and hands, should be cleaned thoroughly with soap and warm water. Containers (e.g., jars and lids) in which pickling will occur should be sterilized (e.g., placed in boiling water for a prescribed period). 
+
+<br><br>PICKLING TIPS
+
+<br>Pickled eggs are peeled, hard-cooked eggs in a solution consisting basically of vinegar, salt, spices, and perhaps other seasonings.  Pickling solutions are heated to boiling, simmered for 5 minutes, and poured over the peeled eggs.  Egg whites tend to be more tender if a boiling solution is used instead of room temperature solutions. 
+
+<br>Eggs used for pickling should have clean, sound shells.  Small or medium eggs are usually a good choice for pickling so the seasoning can penetrate into the egg.  Fresh eggs are the best to use for pickling to ensure the highest quality possible since the eggs will be stored over a relatively long period of time. However, eggs at least a few days old will peel better after boiling.
+
+<br><br>Cooking and Peeling Eggs
+
+<br>According to the Georgia Egg Commission, the following method of hard-cooking facilitates peeling of ultra fresh eggs.  Make a pinhole in the large end of the egg, place the eggs in a single layer in a saucepan, and cover with cold water to an inch above the layer of eggs.  Place a lid on the pan and bring eggs to a boil.  Remove the pan of eggs from the burner, leaving the cover in place, and allow to sit for 15-18 minutes, adjusting time up or down 3 minutes for larger or smaller eggs.  Immediately remove eggs from the pan of hot water with a slotted spoon to a bowl of ice water for one minute.  In the meantime, bring hot water to simmering.  After one minute in ice water remove eggs back to the simmering water for ten seconds.  The ten second interval is important because this allows the shell to expand without expanding the rest of the egg.  Peel immediately by cracking the shells of the egg all over.  Roll each egg gently between hands to loosen the shell.  Peel, starting at the large end of the egg.  The peeling may take place under cold running water to help wash the shell off the egg and to minimize the shell breaking into the white.
+
+<br>Another cooking method when you are less concerned about peeling of ultra-fresh eggs is to make a pinhole in the large end of the egg, place the eggs in a single layer in a saucepan, and cover with cold water to an inch above the layer of eggs.  Place a lid on the pan and bring eggs to a boil.  Turn down the heat and simmer for 15 minutes.  Place the eggs in cold water and when cool, remove shells.  Crack the shell of the egg all over.  Peel, starting at the large end of the egg.  The peeling may take place under cold running water to help wash the shell off the egg.
+
+<br><br>Containers for the Eggs
+
+<br>The container used for the eggs should be one that can be closed or sealed tightly; glass canning jars work well.  The eggs are to be completely covered with the pickling solution during storage.  A quart-size canning jar will hold about one dozen medium sized eggs.  For sterilizing glass jars, see Sterilization of Empty Jars.
+
+<br><br>Storing Eggs
+
+<br>After making the eggs, the eggs require some time to season (i.e., pick up the flavors from the pickling brine). Keep them refrigerated at all times. If small eggs are used, 1 to 2 weeks are usually allowed for seasoning to occur.  Medium or large eggs may require 2 to 4 weeks to become well seasoned.  Use the eggs within 3 to 4 months for best quality.
+
+<br><br>RECIPES
+
+<br>Each of these recipes uses 12 peeled, hard-cooked eggs.  The directions for each recipe are to bring all the ingredients except the eggs to a boil, reduce the heat and simmer for 5 minutes.  Pack no more than one dozen peeled, hard-cooked eggs loosely into a warm, pre-sterilized quart jar (or other similar size container which can be closed tightly).  There needs to be plenty of pickling solution, and enough to completely cover the eggs.  Pour the hot pickling solution over the eggs in the jar, cover, and refrigerate immediately.
+
+<br><br>RED BEET EGGS
+<br>1 cup red beet juice (from canned beets)
+<br>1½ cups cider vinegar
+<br>1 teaspoon brown sugar
+<br>a few canned whole tiny red beets (or several slices of beets can be used)
+
+<br><br>SWEET AND SOUR EGGS
+<br>1½ cups pasteurized apple cider
+<br>½ cup cider vinegar
+<br>1 package (about 12 oz.) red cinnamon candy
+<br>1 tablespoon mixed pickling spice
+<br>2 tablespoons salt
+<br>1 teaspoon garlic salt
+
+<br><br>DARK AND SPICY EGGS
+<br>1½ cups cider vinegar
+<br>½ cup water
+<br>1 tablespoon dark brown sugar
+<br>2 teaspoons granulated sugar
+<br>1 teaspoon mixed pickling spice
+<br>¼ teaspoon liquid smoke or hickory smoke salt
+<br>2 teaspoons salt
+
+<br><br>CIDERED EGGS
+<br>1½ cups pasteurized sweet apple cider or apple juice
+<br>½ cup white vinegar
+<br>6 thin slices of onion
+<br>1½ teaspoons salt
+<br>1 teaspoon whole pickling spice
+<br>1 peeled garlic clove
+
+<br><br>DILLED EGGS
+<br>1½ cups white vinegar
+<br>1 cup water
+<br>¾ teaspoon dill weed
+<br>¼ teaspoon white pepper
+<br>3 teaspoons salt
+<br>¼ teaspoon mustard seed
+<br>½ teaspoon onion juice or minced onion
+<br>½ teaspoon minced garlic or 1 peeled garlic clove
+
+<br><br>PINEAPPLE PICKLED EGGS
+<br>1 can (12 oz.) unsweetened pineapple juice*
+<br>1½ cups white vinegar
+<br>2 medium onions, peeled and sliced
+<br>¼ cup sugar
+<br>1 teaspoon salt
+<br>1 teaspoon whole pickling spice
+<br>*If sweetened pineapple juice is used, omit sugar</p>
+                `;
+            } else if (section === 'Relishes, Salads') {
+                content.innerHTML = `
+                   <h1>Relishes, Salads</h1>
+                    <h2>Pickled Three-Bean Salad</h2>
+                    <p>1-1/2 cups cut and blanched green or yellow beans (prepared as below)
+<br>1-1/2 cups canned, drained, red kidney beans
+<br>1 cup canned, drained garbanzo beans
+<br>1/2 cup peeled and thinly sliced onion (about 1 medium onion)
+<br>1/2 cup trimmed and thinly sliced celery (1-1/2 medium stalks)
+<br>1/2 cup sliced green peppers (1/2 medium pepper)
+<br>1/2 cup white vinegar (5 percent)
+<br>1/4 cup bottled lemon juice
+<br>3/4 cup sugar
+<br>1/4 cup oil
+<br>1/2 tsp canning or pickling salt
+<br>1-1/4 cups water
+<br>Yield: About 5 to 6 half-pints
+
+<br><br>Please read Using Boiling Water Canners before beginning. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>Procedure: Wash and snap off ends of fresh beans. Cut or snap into 1- to 2-inch pieces. Blanch 3 minutes and cool immediately. Rinse kidney beans with tap water and drain again. Prepare and measure all other vegetables. Combine vinegar, lemon juice, sugar, and water and bring to a boil. Remove from heat. Add oil and salt and mix well. Add beans, onions, celery, and green pepper to solution and bring to a simmer. Marinate 12 to 14 hours in refrigerator, then heat entire mixture to a boil. Fill clean jars with solids. Add hot liquid, leaving 1/2-inch headspace.</p>
+                `;
+            }
+            else if (section === 'Fruit Pickles') {
+                content.innerHTML = `
+                    <h1>Fruit Pickles</h1>
+                    <h2>Fig Pickles</h2>
+                    <p>4 quarts firm-ripe figs
+<br>3 cups sugar
+<br>2 quarts water
+<br>2 cups sugar
+<br>3 cups vinegar
+<br>2 sticks cinnamon
+<br>1 tablespoon whole allspice
+<br>1 tablespoon whole cloves
+<br>Yield: About 8 pints.
+
+<br><br>Please read Using Boiling Water Canners before beginning. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>Procedure - Peel figs. (If unpeeled are preferred, pour boiling water over figs and let stand until cool; drain.) Add 3 cups sugar to water and cook until sugar dissolves. Add figs and cook slowly 30 minutes. Add 2 cups sugar and vinegar. Tie spices in a cheesecloth bag; add to figs. Cook gently until figs are clear. Co9ver and let stand 12 to 24 hours in refrigerator.
+
+<br><br>Remove spice bag. Heat figs in brine to the boiling point. Fill hot figs and brine into clean, hot jars, leaving ½-inch head space. Remove air bubbles and adjust headspace if needed. Wipe rims of jars with a dampened clean paper towel; adjust two-piece metal canning lids. Process in a boiling water canner.</p>
+                `;
+            }
+            else if (section === 'Vegetable Pickles') {
+                content.innerHTML = `
+                    <h1>Vegetable Pickles</h1>
+                    <h2>Pickled Carrots</h2>
+                    <p>2¾ pounds peeled carrots (about 3½ pounds as purchased)
+<br>5½ cups white distilled vinegar (5%)
+<br>1 cup water
+<br>2 cups sugar
+<br>2 teaspoons canning salt
+<br>8 teaspoons mustard seed
+<br>4 teaspoons celery seed
+<br>Yield: About 4 pint jars
+
+<br><br>Please read Using Boiling Water Canners before beginning. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>Procedure:
+
+<br>Wash and rinse pint canning jars; keep hot until ready to use. Prepare lids and bands according to manufacturer's directions.
+<br>Wash and peel carrots well. Wash again after peeling and cut into rounds that are approximately ½-inch thick.
+<br>Combine vinegar, water, sugar and canning salt in an 8-quart Dutch oven or stockpot. Bring to a boil and boil gently 3 minutes. Add carrots and bring back to a boil. Then reduce heat to a simmer and heat until the carrots are half-cooked (about 10 minutes).
+<br>Meanwhile, place 2 teaspoons mustard seed and 1 teaspoon celery seed in the bottom of each clean, hot pint jar.
+<br>Fill hot jars with the hot carrots, leaving 1-inch headspace. Cover with hot pickling liquid, leaving ½-inch headspace. Remove air bubbles and adjust headspace if needed. Wipe rims of jars with a dampened, clean paper towel; adjust two-piece metal canning lids.
+<br>Process in a boiling water canner, as recommended in Table 1. Let cool, undisturbed, 12 to 24 hours and check for seals.
+<br>Allow carrots to sit in processed jars for 3 to 5 days before consuming for best flavor development.</p>
+                `;
+            }
+        }
+    </script>
+
+    
+
+    </body>
+    </html>
+    
+    <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="final.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <nav class="header-content">
+            <a href="index.html"><img class="logo" src="rv-logo.png" alt="Logo"></a>
+            <p class="inst-name">R V College of Engineering</p>
+        </nav> 
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href=""><b>Preserve By</b></a></li>
+                <li><a href=""><b>Resources</b></a></li>
+                <li><a href=""><b>Newsflash</b></a></li>
+                <li><a href=""><b>FAQs</b></a></li>
+                <li><a href=""><b>Blog</b></a></li>
+                <li><a href=""><b>Donate</b></a></li>
+            </ul>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </div>
+    </section>
+    <section class="image-section">
+        <div class="image-container">
+            <img src="canning.jpg" alt="CANNING" class="background-image">
+            <h1 class="image-heading">CANNING</h1>
+        </div>
+    </section>
+</body>
+</html>
+    
+ -->

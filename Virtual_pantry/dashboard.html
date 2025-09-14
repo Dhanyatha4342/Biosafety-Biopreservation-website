@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { text-align: center; }
+        .container { max-width: 1200px; margin: auto; }
+        .section { margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #f4f4f4; }
+        .button { padding: 10px 15px; background-color: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        .button:hover { background-color: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Dashboard</h1>
+
+        <div class="section">
+            <h2>Pantry Inventory</h2>
+            <table id="inventory-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Expiration Date</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Expiring Items</h2>
+            <table id="expiring-items-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Expiration Date</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2>Recipe Suggestions</h2>
+            <ul id="recipe-suggestions">
+                <!-- Recipes will be populated here -->
+            </ul>
+        </div>
+
+        <div class="section">
+            <button class="button" onclick="fetchData()">Refresh Data</button>
+        </div>
+    </div>
+
+    <script>
+        function fetchData() {
+            // Fetch inventory data
+            fetch('/api/get-items')
+                .then(response => response.json())
+                .then(data => {
+                    const tableBody = document.getElementById('inventory-table').getElementsByTagName('tbody')[0];
+                    tableBody.innerHTML = '';
+                    data.forEach(item => {
+                        const row = tableBody.insertRow();
+                        row.insertCell(0).textContent = item.name;
+                        row.insertCell(1).textContent = item.quantity;
+                        row.insertCell(2).textContent = item.expiration_date;
+                    });
+                });
+
+            // Fetch expiring items
+            fetch('/api/get-expiring-items')
+                .then(response => response.json())
+                .then(data => {
+                    const tableBody = document.getElementById('expiring-items-table').getElementsByTagName('tbody')[0];
+                    tableBody.innerHTML = '';
+                    data.forEach(item => {
+                        const row = tableBody.insertRow();
+                        row.insertCell(0).textContent = item.name;
+                        row.insertCell(1).textContent = item.expiration_date;
+                    });
+                });
+
+            // Fetch recipe suggestions
+            fetch('/api/suggest-recipes')
+                .then(response => response.json())
+                .then(data => {
+                    const ul = document.getElementById('recipe-suggestions');
+                    ul.innerHTML = '';
+                    data.forEach(recipe => {
+                        const li = document.createElement('li');
+                        li.textContent = recipe.name;
+                        ul.appendChild(li);
+                    });
+                });
+        }
+
+        // Load data on page load
+        window.onload = fetchData;
+    </script>
+</body>
+</html>

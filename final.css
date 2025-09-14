@@ -1,0 +1,294 @@
+
+.header-two {
+    display: flex;
+    align-items: center;
+    z-index: 10; /* Increased z-index */
+    position: relative;}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.logo {
+    width: 50px; /* Reduced the width from 250px to 200px */
+    vertical-align: left;
+    display: flex;
+    align-items: left;
+    margin-right: 2px;
+}
+
+.inst-img {
+    width: 100px;
+    padding: 20px;
+}
+.header-content {
+    display: flex; /* Aligns items horizontally */
+    align-items: center; /* Vertically centers items */
+    background-color: #f0f0f0; /* Slight grayish background */
+    padding: 10px 20px; /* Adds padding inside the block */
+    border-radius: 5px; /* Slightly rounds the corners */
+}
+
+.logo {
+    width: 80px; /* Adjust the width of the logo as needed */
+    margin-right: 5px; /* Space between the logo and the text */
+}
+
+.inst-name {
+    font-weight: bolder;
+    font-size: 20px;
+    margin: 0; /* Remove default margin */
+    color: #333; /* Set a text color that contrasts well with the background */
+}
+
+.inst-name {
+    display: inline;
+    font-weight: bolder;
+    font-size:20px;
+    padding:0;
+}
+
+
+.subpages {
+    flex: 2;
+}
+
+.sub-link {
+    font-size: 17px;
+    margin: 25px;
+}
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display:flex;
+    padding:2% 6%;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav img{
+    width:150px;
+
+}
+.nav-links{
+    flex:1;
+    text-align:right;
+
+}
+
+.nav-links ul li{
+    list-style: none;
+    display:inline-block;
+    padding:8px 12px;
+    position:relative;
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-size:13px;
+}
+
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background: #f44336;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+}
+
+.nav-links ul li:hover::after{
+    width:100%;
+
+}
+
+.text-box{
+    width:90%;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+
+}
+
+.text-box h1{
+    font-size:62px;
+}
+.text-box p{
+    margin:10px 0 40px;
+    font-size:14px;
+    color:#fff;
+}
+
+.hero-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    border:1px solid #fff;
+    padding: 12px 34px;
+    font-size:13px;
+    background:transparent;
+    position: relative;
+    cursor:pointer;
+}
+
+.hero-btn:hover{
+    border:1px solid#f44336;
+    background:#f44336;
+   transition:1s; 
+}
+
+
+/*---canning---*/
+.image-section {
+    margin: 20px 0; /* Add margin around the section */
+}
+
+.image-container {
+    position: relative;
+    width: 100%; /* Adjust the width as needed */
+    height: 400px; /* Adjust the height as needed */
+    border: 2px solid #ccc; /* Optional: Add a border to the image container */
+    border-radius: 8px; /* Optional: Add rounded corners to the container */
+    overflow: hidden; /* Ensure the content fits within the container */
+    margin:0;
+    padding:0;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.image-heading {
+    position: absolute;
+    left: 20px; /* Adjust the distance from the left */
+    top: 50%;
+    transform: translateY(-50%); /* Center the text vertically */
+    color: white;
+    font-size: 64px; /* Adjust the font size as needed */
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    z-index:2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    z-index: 1;
+}
+
+/* Menu Section */
+.menu {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.menu h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    margin-bottom: 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #ddd;
+}
+
+/* Submenu (hidden by default) */
+.submenu {
+    display: none;
+    margin-left: 20px;
+}
+
+.submenu li {
+    margin-bottom: 10px;
+}
+
+.submenuone {
+    display: none;
+    margin-left: 20px;
+}
+
+.submenuone li {
+    margin-bottom: 10px;
+}
+
+/* Content Section */
+.content-container {
+    display: flex;
+    justify-content: space-between; /* Space between menu and content */
+    padding: 20px;
+}
+
+.content {
+    width: 75%;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.content h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .content {
+        width: 100%;
+    }
+}

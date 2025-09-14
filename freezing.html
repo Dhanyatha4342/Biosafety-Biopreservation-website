@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="final.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    
+        
+    <title>Document</title>
+</head>
+<body>
+            <section class="header">
+                <nav>
+                 <a href="index.html"><img class="logo"src="rv-logo.png"></a>
+                 <p class="inst-name">R V College of Engineering</p>
+                 <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+                <div class = "sub-pages">
+                    <a class="sub-link" href="https://app.mypantrytracker.com/home" ><b>Virtual Pantry</b></a>
+                    <a class = "sub-link" href="Canning.html"><b>Preserve By</b></a>
+                    <a class="sub-link" href="resources.html" ><b>Resources</b></a>
+                    <a class="sub-link" href="faq.html" ><b>FAQs</b></a>
+                    <a class="sub-link" href="blog.html" ><b>Blog</b></a>
+                    <a class="sub-link" href="donations.html"><b>Donate</b></a>
+                    <a class="sub-link" href="contact.html" ><b>Contact</b></a>
+                </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+           </nav> 
+        </div>
+    
+    </section>
+    <section class="image-section">
+        
+        <div class="image-container">
+            <div class="overlay"></div>   
+            <img src="freezing.png" alt="FREEZING" class="background-image">
+            <h1 class="image-heading">FREEZING</h1>
+        </div>
+    </section>
+
+
+
+    <section class="content-container">
+        <!-- Left menu section -->
+        <div class="menu">
+            <h2>FREEZING</h2>
+            <ul>
+                <li><a href="#" onclick="showContent('General information - Freezing')">General information - Freezing</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('Vegetables-submenu')">Vegetables</a>
+                    <ul id="Vegetables-submenu" class="submenu">
+                        <li><a href="#" onclick="showContent('Freezing Carrots')">Freezing Carrots</a></li>
+                        <li><a href="#" onclick="showContent('Freezing Beets')">Freezing Beets</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('Fruits-submenu')">Fruits</a>
+                    <ul id="Fruits-submenu" class="submenu">
+                        <li><a href="#" onclick="showContent('Freezing Bananas')">Freezing Bananas</a></li>
+                        <li><a href="#" onclick="showContent('Freezing Beets')">Freezing Beets</a></li>
+                        
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('Dairy and eggs-submenu')">Dairy and eggs</a>
+                    <ul id="Dairy and eggs-submenu" class="submenu">
+                        <li><a href="#" onclick="showContent('Freezing Butter')">Freezing Butter</a></li>
+                        <li><a href="#" onclick="showContent('Freezing Cheese')">Freezing Cheese</a></li>
+                        
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+
+        <!-- Right content section -->
+        <div class="content" id="content">
+            <h1>FREEZING</h1>
+            <p>Freezing is one of the easiest, most convenient, and least time-consuming methods of preserving foods. Freezing does not sterilize foods; the extreme cold simply retards the growth of microorganisms and slows down chemical changes that affect quality or cause food to spoil.
+
+                This process involves reducing the temperature of the food product to a point where water within it solidifies into ice, creating an inhospitable environment for microbial activity. The key to successful freezing lies in achieving rapid and uniform cooling, minimizing the formation of ice crystals, which can negatively impact the texture and quality of the food. Understanding the science of freezing, including the principles of heat transfer and the kinetics of freezing, is essential for preserving the nutritional content and overall appeal of a wide range of foods, from vegetables and fruits to meats and dairy products. </p>
+        </div>
+    </section>
+
+    <script>
+        function toggleSubMenu(id) {
+            const submenu = document.getElementById(id);
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function showContent(section) {
+            const content = document.getElementById('content');
+            if (section === 'How Canning Preserves Foods') {
+                content.innerHTML = `
+                    <h1>How Canning Preserves Foods</h1>
+                    <p> </p>
+                `;
+            
+            
+            
+            } else if (section === 'General information - Freezing') {
+                content.innerHTML = `
+                    <h1>General information - Freezing</h1>
+                    <h2>Containers for Freezing<h2>
+                    <p>
+<br>Foods for your freezer must have proper packaging materials to protect their flavor, color, moisture content and nutritive value from the dry climate of the freezer. The selection of containers depends on the type of food to be frozen, personal preference and types that are readily available. Do not freeze fruits and vegetables in containers with a capacity over one-half gallon. Foods in larger containers freeze too slowly to result in a satisfactory product. In general, packaging materials must have certain characteristics:
+
+<br>Moisture vapor resistant
+<br>Durable and leakproof
+<br>Not become brittle and crack at low temperatures
+<br>Resistant to oil, grease or water
+<br>Protect foods from absorption of off flavors or odors
+<br>Easy to seal
+<br>Easy to mark
+<br>There are two types of packaging materials for home use: rigid containers and flexible bags or wrappings.
+
+<br><br>RIGID CONTAINERS
+<br>Rigid containers made of plastic or glass are suitable for all packs and are especially good for liquid packs. Straight sides on rigid containers make the frozen food much easier to get out. Rigid containers are often reuseable and make the stacking of foods in the freezer easier. Cardboard cartons for cottage cheese, ice cream and milk are not sufficiently moisture vapor resistant to be suitable for long term freezer storage, unless they are lined with a freezer bag or wrap.
+
+<br><br>Regular glass jars break easily at freezer temperatures. If using glass jars, choose wide mouth dual purpose jars made for freezing and canning. These jars have been tempered to withstand extremes in temperatures. The wide mouth allows easy removal of partially thawed foods. If standard canning jars (those with narrow mouths) are used for freezing, leave extra headspace to allow for expansion of foods during freezing. Expansion of the liquid could cause the jars to break at the neck. Some foods will need to be thawed completely before removal from the jar.
+
+<br><br>Covers for rigid containers should fit tightly. If they do not, reinforce the seal with freezer tape. Freezer tape is especially designed to stick at freezing temperatures.
+
+<br><br>FLEXIBLE BAGS OR WRAPPINGS
+<br>Flexible freezer bags and moisture-vapor resistant wrapping materials such as plastic freezer wrap, freezer paper and heavy-weight aluminum foil are suitable for dry packed products with little or no liquid. Bags and wraps work well for foods with irregular shapes. Bags can also be used for liquid packs.
+
+<br><br>Plastic freezer bags are available in a variety of sizes. There are two types of closures. One type is twisted at the top, folded over and wrapped with twist ties included in the package. The other is zipped or pressed to seal a plastic channel. Regardless of type, press to remove as much air as possible before closing.
+
+ 
+
+
+
+</p>
+                `;
+            } else if (section === 'Freezing Carrots') {
+                content.innerHTML = `
+                    <h1>Freezing Carrots</h1>
+                    <p>Preparation – Select young, tender, coreless, medium length carrots. Remove tops, wash and peel. Leave small carrots whole. Cut others into thin slices, 1/4-inch cubes or lengthwise strips.
+
+<br><br>Water blanch small whole carrots 5 minutes, diced or sliced 2 minutes and lengthwise strips 2 minutes.
+
+<br><br>Cool promptly, drain and package, leaving 1/2-inch headspace. Seal and freeze.
+</p>
+                `;
+            } else if (section === 'Freezing Beets') {
+                content.innerHTML = `
+                    <h1>Freezing Beets</h1>
+                    <p>Preparation – Select deep, uniformly-red, tender, young beets. Wash and sort according to size. Trim tops, leaving 1/2 inch of stems and tap root, to prevent bleeding of color during cooking.
+
+<br><br>Cook in boiling water until tender-for small beets 25 to 30 minutes; for medium beets 45 to 50 minutes.
+
+<br><br>Cool promptly in cold water. Peel, remove stem and tap root, and cut into slices or cubes. Package, leaving ½-inch headspace. Seal and freeze.</p>
+                `;
+            } else if (section === 'Freezing Bananas') {
+                content.innerHTML = `
+                    <h1>Freezing Bananas</h1>
+                    <p>Preparation – Select firm ripe bananas. Peel; mash thoroughly. Add 1/2 teaspoon (1500 mg) ascorbic acid per cup of mashed banana. Package in moisture-vapor resistant container. Seal and freeze.
+
+ 
+
+<br><br>This document was extracted from "So Easy to Preserve", 6th ed. 2014. Bulletin 989, Cooperative Extension Service, The University of Georgia, Athens. Revised by Elizabeth L. Andress. Ph.D. and Judy A. Harrison, Ph.D., Extension Foods Specialists.</p>
+                `;
+            }
+            else if (section === 'Freezing Apples') {
+                content.innerHTML = `
+                    <h1>Freezing Apples</h1>
+                    <p>Preparation – Syrup Pack is preferred for apples to be used for uncooked desserts or fruit cocktail. A sugar or dry pack is good for pie making.
+
+<br><br>Select full-flavored apples that are crisp and firm, not mealy in texture. Wash, peel and core. Slice medium apples into twelfths, large ones into sixteenths.
+
+<br><br>Syrup Pack – Use cold 40 percent syrup. To prevent browning, add 1/2 teaspoon (1500 mg) ascorbic acid to each quart of syrup.
+
+<br><br>Slice apples directly into syrup in container starting with 1/2 cup syrup to a pint container. Press fruit down in containers and add enough syrup to cover. Leave headspace. Place a small piece of crumpled water-resistant paper on top to hold fruit down. Seal and freeze.
+
+<br><br>Sugar Pack – To prevent darkening, dissolve 1/2 teaspoon (1500 mg) ascorbic acid in 3 tablespoons water. Sprinkle over the fruit. Or, apple slices can be steam blanched for 11/2 to 2 minutes.
+
+<br><br>Mix 1/2 cup sugar with 1 quart (1 1/4 pounds) of fruit. Pack apples into containers and press fruit down, leaving headspace. Seal and freeze.
+
+<br><br>Dry Pack – Follow the directions for Sugar Pack, omitting the sugar. Treated apple slices can also be frozen first on a tray and then packed into containers as soon as they are frozen. For more information, see other unsweetened packs.</p>
+                `;
+            }
+            else if (section === 'Freezing Cheese') {
+                content.innerHTML = `
+                    <h1>Freezing Cheese</h1>
+                    <p>Cheese keeps best in the refrigerator. If necessary, hard or semi-hard cheese can be frozen if cut in 1-1/2- to 1-pound sizes and packaged in moisture-vapor resistant material. This cheese may become crumbly and mealy when frozen, but will retain its flavor.
+
+<br><br>Cream cheese, cottage cheese and ricotta cheese do not freeze well. However, if combined with heavy cream, cream cheese can be frozen for later use in dips or as icing on frozen sandwich loaves.
+
+<br><br>Recommended freezer shelf life:
+
+<br>Hard cheese (such as cheddar and Swiss), 6 months
+<br>Soft cheese (such as Brie), 6 months
+ 
+
+<br><br>This document was extracted from: (1)"So Easy to Preserve", 6th ed. 2014. Bulletin 989, Cooperative Extension Service, The University of Georgia, Athens. Revised by Elizabeth L. Andress. Ph.D. and Judy A. Harrison, Ph.D., Extension Foods Specialists. (2) “The Food Keeper.” Food Marketing Institute and Cornell University. March 1996.</p>
+                `;
+            }
+            else if (section === 'Freezing Butter') {
+                content.innerHTML = `
+                    <h1>Freezing Butter</h1>
+                    <p>Freeze only high quality butter made from pasteurized cream. Mold into squares, patties or other desired shapes, and wrap tightly in aluminum foil, transparent film or freezer paper, or seal in moisture-vapor resistant containers.
+
+<br><br>Recommended freezer shelf life: 6 to 9 months
+
+ 
+
+<br><br>This document was extracted from: (1)"So Easy to Preserve", 6th ed. 2014. Bulletin 989, Cooperative Extension Service, The University of Georgia, Athens. Revised by Elizabeth L. Andress. Ph.D. and Judy A. Harrison, Ph.D., Extension Foods Specialists. (2) “The Food Keeper.” Food Marketing Institute and Cornell University. March 1996.</p>
+                `;
+            }
+        }
+    </script>
+
+    
+
+    </body>
+    </html>

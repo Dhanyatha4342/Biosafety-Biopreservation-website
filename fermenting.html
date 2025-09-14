@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="final.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    
+        
+    <title>Document</title>
+</head>
+<body>
+            <section class="header">
+                <nav>
+                 <a href="index.html"><img class="logo"src="rv-logo.png"></a>
+                 <p class="inst-name">R V College of Engineering</p>
+                 <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+                <div class = "sub-pages">
+                    <a class="sub-link" href="https://app.mypantrytracker.com/home" ><b>Virtual Pantry</b></a>
+                    <a class = "sub-link" href="Canning.html"><b>Preserve By</b></a>
+                    <a class="sub-link" href="resources.html" ><b>Resources</b></a>
+                    <a class="sub-link" href="faq.html" ><b>FAQs</b></a>
+                    <a class="sub-link" href="blog.html" ><b>Blog</b></a>
+                    <a class="sub-link" href="donations.html"><b>Donate</b></a>
+                    <a class="sub-link" href="contact.html" ><b>Contact</b></a>
+                </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+           </nav> 
+        </div>
+    
+    </section>
+    <section class="image-section">
+        
+        <div class="image-container">
+            <div class="overlay"></div>   
+            <img src="fermenting.jpg" alt="FERMENTING" class="background-image">
+            <h1 class="image-heading">FERMENTING</h1>
+        </div>
+    </section>
+
+
+
+    <section class="content-container">
+        <!-- Left menu section -->
+        <div class="menu">
+            <h2>FERMENTING</h2>
+            
+            <ul>
+                <li><a href="#" onclick="showContent('General Information on Fermenting')">General Information on Fermenting</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('Recipes-submenu')">Recipes</a>
+                    <ul id="Recipes-submenu" class="submenu">
+                        <li><a href="#" onclick="showContent('Dill Pickles')">Dill Pickles</a></li>
+                        <li><a href="#" onclick="showContent('Sauerkraut')">Sauerkraut</a></li>
+                       
+                    </ul>
+                
+                
+                
+            </ul>
+        </div>
+
+        <!-- Right content section -->
+        <div class="content" id="content">
+            <h1>FERMENTING</h1>
+            <p>Fermentation is a process that involves the transformation of raw ingredients into a wide array of flavorful, preserved, and often nutritionally enhanced products. At its core, fermentation is driven by microorganisms, such as bacteria, yeast, and molds, that break down carbohydrates and other organic compounds in the absence of oxygen. This metabolic activity generates a spectrum of compounds, including acids, alcohol, and gases, which not only preserve food but also imbue it with distinctive textures and flavors. The fermentation process encompasses a diverse range of culinary traditions and foods, from bread and cheese to sauerkraut and kimchi, showcasing both the art and science of harnessing microorganisms to create delectable and nutritionally valuable products. </p>
+        </div>
+    </section>
+
+    <script>
+        function toggleSubMenu(id) {
+            const submenu = document.getElementById(id);
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function showContent(section) {
+            const content = document.getElementById('content');
+            if (section === 'How Canning Preserves Foods') {
+                content.innerHTML = `
+                    <h1>How Canning Preserves Foods</h1>
+                    <p> </p>
+                `;
+            
+            
+            
+            } else if (section === 'General Information on Fermenting') {
+                content.innerHTML = `
+                    <h1>General Information on Fermenting</h1>
+                    <p>The many varieties of pickled and fermented foods are classified by ingredients and method of preparation.
+
+<br><br>Regular dill pickles and sauerkraut are fermented and cured for about 3 weeks. Refrigerator dills are fermented for about 1 week. During curing, colors and flavors change and acidity increases. Fresh-pack or quick-process pickles are not fermented; some are brined several hours or overnight, then drained and covered with vinegar and seasonings. Fruit pickles usually are prepared by heating fruit in a seasoned syrup acidified with either lemon juice or vinegar. Relishes are made from chopped fruits and vegetables that are cooked with seasonings and vinegar.
+
+<br><br>Be sure to remove and discard a 1/16-inch slice from the blossom end of fresh cucumbers. Blossoms may contain an enzyme which causes excessive softening of pickles.
+
+<br><br>Caution: The level of acidity in a pickled product is as important to its safety as it is to taste and texture.
+
+<br>Do not alter vinegar, food, or water proportions in a recipe or use a vinegar with unknown acidity.
+<br>Use only recipes with tested proportions of ingredients.
+<br>There must be a minimum, uniform level of acid throughout the mixed product to prevent the growth of botulinum bacteria.
+<br><br>Ingredients
+
+<br>Select fresh, firm fruits or vegetables free of spoilage. Measure or weigh amounts carefully, because the proportion of fresh food to other ingredients will affect flavor and, in many instances, safety.
+
+<br>Use canning or pickling salt. Noncaking material added to other salts may make the brine cloudy. Since flake salt varies in density, it is not recommended for making pickled and fermented foods. White granulated and brown sugars are most often used. Corn syrup and honey, unless called for in reliable recipes, may produce undesirable flavors. White distilled and cider vinegars of 5 percent acidity (50 grain) are recommended. White vinegar is usually preferred when light color is desirable, as is the case with fruits and cauliflower.
+
+<br>Pickles with reduced salt content
+
+<br>Recipes for pickles with reduced sodium content are provided in Guide 6 of the USDA Complete Guide to Home Canning.
+
+<br>In the making of fresh-pack pickles, cucumbers are acidified quickly with vinegar. Use only tested recipes formulated to produce the proper acidity. While these pickles may be prepared safely with reduced or no salt, their quality may be noticeably lower. Both texture and flavor may be slightly, but noticeably, different than expected. You may wish to make small quantities first to determine if you like them.
+
+<br>However, the salt used in making fermented sauerkraut and brined pickles not only provides characteristic flavor but also is vital to safety and texture. In fermented foods, salt favors the growth of desirable bacteria while inhibiting the growth of others. Caution: Do not attempt to make sauerkraut or fermented pickles by cutting back on the salt required.
+
+<br><br>Firming agents
+
+<br>Alum may be safely used to firm fermented pickles. However, it is unnecessary and is not included in the recipes in this publication. Alum does not improve the firmness of quick-process pickles. The calcium in lime definitely improves pickle firmness. Food-grade lime may be used as a lime-water solution for soaking fresh cucumbers 12 to 24 hours before pickling them. Excess lime absorbed by the cucumbers must be removed to make safe pickles. To remove excess lime, drain the lime-water solution, rinse, and then resoak the cucumbers in fresh water for 1 hour. Repeat the rinsing and soaking steps two more times. To further improve pickle firmness, you may process cucumber pickles for 30 minutes in water at 180°F. This process also prevents spoilage, but the water temperature should not fall below 180°F. Use a candy or jelly thermometer to check the water temperature.
+
+<br><br>Preventing spoilage
+
+<br>Pickle products are subject to spoilage from microorganisms, particularly yeasts and molds, as well as enzymes that may affect flavor, color, and texture. Processing the pickles in a boiling-water canner will prevent both of these problems. Standard canning jars and self-sealing lids are recommended. Processing times and procedures will vary according to food acidity and the size of food pieces.</p>
+                `;
+            } else if (section === 'Dill Pickles') {
+                content.innerHTML = `
+                    <h1>Dill Pickles</h1>
+                    <p>Use the following quantities for each gallon capcity of your container.
+
+<br>4 lbs of 4-inch pickling cucumbers
+<br>2 tbsp dill seed or 4 to 5 heads fresh or dry dill weed
+<br>1/2 cup salt
+<br>1/4 cup vinegar (5 percent)
+<br>8 cups water and one or more of the following ingredients:
+<br>2 cloves garlic (optional)
+<br>2 dried red peppers (optional)
+<br>2 tsp whole mixed pickling spices (optional)
+<br><br>Procedure:<br> Wash cucumbers. Cut 1/16-inch slice off blossom end and discard. Leave 1/4-inch of stem attached. Place half of dill and spices on bottom of a clean, suitable container. For more information on containers see "Suitable Containers, Covers, and Weights for Fermenting Food," . Add cucumbers, remaining dill, and spices. Dissolve salt in vinegar and water and pour over cucumbers. Add suitable cover and weight. Store where temperature is between 70ºF and 75ºF for about 3 to 4 weeks while fermenting. Temperatures of 55º to 65ºF are acceptable, but the fermentation will take 5 to 6 weeks. Avoid temperatures above 80ºF, or pickles will become too soft during fermentation. Fermenting pickles cure slowly. Check the container several times a week and promptly remove surface scum or mold. Caution: If the pickles become soft, slimy, or develop a disagreeable odor, discard them. Fully fermented pickles may be stored in the original container for about 4 to 6 months, provided they are refrigerated and surface scum and molds are removed regularly. Canning fully fermented pickles is a better way to store them. To can them, pour the brine into a pan, heat slowly to a boil, and simmer 5 minutes. Filter brine through paper coffee filters to reduce cloudiness, if desired. Fill jar with pickles and hot brine, leaving 1/2-inch headspace.</p>
+                `;
+            } else if (section === 'Sauerkraut') {
+                content.innerHTML = `
+                    <h1>Sauerkraut</h1>
+                    <p>25 lbs cabbage
+<br>3/4 cup canning or pickling salt
+<br><br>Quality: For the best sauerkraut, use firm heads of fresh cabbage. Shred cabbage and start kraut between 24 and 48 hours after harvest.
+
+<br>Yield: About 9 quarts
+
+<br><br>Procedure: Work with about 5 pounds of cabbage at a time. Discard outer leaves. Rinse heads under cold running water and drain. Cut heads in quarters and remove cores. Shred or slice to a thickness of a quarter. Put cabbage in a suitable fermentation container, see "Suitable Containers, Covers, and Weights for Fermenting Food,", and add 3 tablespoons of salt. Mix thoroughly, using clean hands. Pack firmly until salt draws juices from cabbage. Repeat shredding, salting, and packing until all cabbage is in the container. Be sure it is deep enough so that its rim is at least 4 or 5 inches above the cabbage. If juice does not cover cabbage, add boiled and cooled brine (1-1/2 tablespoons of salt per quart of water). Add plate and weights; cover container with a clean bath towel.
+
+<br><br>Sauerkraut fermentation can take place under variable temperature and time combinations. For obtaining a good quality sauerkraut at home, the USDA recommendation is to store at 70º to 75ºF while fermenting. At temperatures between 70º and 75ºF, kraut will be fully fermented in about 3 to 4 weeks; at 60º to 65ºF, fermentation may take 5 to 6 weeks. At temperatures lower than 60ºF, kraut may not ferment. Above 75ºF, kraut may become soft.
+
+<br><br>If you weigh the cabbage down with a brine-filled bag, do not disturb the crock until normal fermentation is completed (when bubbling ceases). If you use jars as weight, you will have to check the kraut 2 to 3 times each week and remove scum if it forms. Fully fermented kraut may be kept tightly covered in the refrigerator for several months or it may be canned as follows:
+
+<br><br>Hot pack – Bring kraut and liquid slowly to a boil in a large kettle, stirring frequently. Remove from heat and fill jars rather firmly with kraut and juices, leaving 1/2-inch headspace.
+
+<br><br>Raw pack – Fill jars firmly with kraut and cover with juices, leaving 1/2-inch headspace.</p>
+                `;
+            }
+        }
+    </script>
+
+    
+
+    </body>
+    </html>

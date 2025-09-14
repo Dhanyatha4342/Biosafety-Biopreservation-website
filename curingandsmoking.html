@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="final.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    
+        
+    <title>Document</title>
+</head>
+<body>
+            <section class="header">
+                <nav>
+                 <a href="index.html"><img class="logo"src="rv-logo.png"></a>
+                 <p class="inst-name">R V College of Engineering</p>
+                 <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+                <div class = "sub-pages">
+                    <a class="sub-link" href="https://app.mypantrytracker.com/home" ><b>Virtual Pantry</b></a>
+                    <a class = "sub-link" href="Canning.html"><b>Preserve By</b></a>
+                    <a class="sub-link" href="resources.html" ><b>Resources</b></a>
+                    <a class="sub-link" href="faq.html" ><b>FAQs</b></a>
+                    <a class="sub-link" href="blog.html" ><b>Blog</b></a>
+                    <a class="sub-link" href="donations.html"><b>Donate</b></a>
+                    <a class="sub-link" href="contact.html" ><b>Contact</b></a>
+                </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+           </nav> 
+        </div>
+    
+    </section>
+    <section class="image-section">
+        
+        <div class="image-container">
+            <div class="overlay"></div>   
+            <img src="curing and smoking.png" alt="CURING AND SMOKING" class="background-image">
+            <h1 class="image-heading">CURING AND SMOKING</h1>
+        </div>
+    </section>
+
+
+
+    <section class="content-container">
+        <!-- Left menu section -->
+        <div class="menu">
+            <h2>CURING AND SMOKING</h2>
+            <ul>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('Pork-submenu')">Pork</a>
+                    <ul id="Pork-submenu" class="submenu">
+                        <li><a href="#" onclick="showContent('Bacon')">Bacon</a></li>
+                        <li><a href="#" onclick="showContent('Ham')">Ham</a></li>
+                        <li><a href="#" onclick="showContent('Sausage')">Sausage</a></li>
+                        
+                    </ul>
+                
+                
+            </ul>
+        </div>
+
+        <!-- Right content section -->
+        <div class="content" id="content">
+            <h1>CURING AND SMOKING</h1>
+            <p>The practice involves the preservation and flavor enhancement of foods through a combination of salt curing and controlled exposure to smoke. Curing is a meticulous process that utilizes salt and sometimes sugar, along with various seasonings, to draw out moisture from meats, creating an inhospitable environment for harmful microorganisms while intensifying flavors. Once cured, the meats are subjected to the gentle, controlled application of smoke, which imparts a rich, smoky taste and acts as an additional preservative. The transformation of fresh meat into delicious smoked products is deeply rooted in the art of balancing time, temperature, and the interplay of flavors, making it a blend of culinary tradition, food science, and craftsmanship. Over centuries, this technique has given rise to an array of beloved foods like bacon, ham, and sausages, each bearing the signature of careful curing and smoking methods. </p>
+        </div>
+    </section>
+
+    <script>
+        function toggleSubMenu(id) {
+            const submenu = document.getElementById(id);
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function showContent(section) {
+            const content = document.getElementById('content');
+            if (section === 'Bacon') {
+                content.innerHTML = `
+                    <h1>Bacon</h1>
+                    <p>University of Missouri Extension:
+                        <ul>
+            <li><a href="https://extension.missouri.edu/publications/g2528">Dry Curing Virginia-Style Ham</a></li>
+        </ul> </p>
+                `;
+            
+            
+            
+            } else if (section === 'Ham') {
+                content.innerHTML = `
+                    <h1>Ham</h1>
+                    <p>Virginia Cooperative Extension:
+        <ul>
+            <li><a href="https://www.pubs.ext.vt.edu/content/dam/pubs_ext_vt_edu/458/458-223/458-223_pdf.pdf">Dry Curing Virginia-Style Ham</a></li>
+        </ul>
+        <br>
+        University of Georgia Extension:
+        <ul>
+            <li><a href="https://secure.caes.uga.edu/extension/publications/files/pdf/B%201526_1.PDF">Dry Curing Virginia-Style Ham</a></li>
+        </ul></p>
+                `;
+            } else if (section === 'Sausage') {
+                content.innerHTML = `
+                    <h1>Sausage</h1>
+                    <p>University of Missouri Extension:
+                        <ul>
+            <li><a href="https://secure.caes.uga.edu/extension/publications/files/pdf/B%201526_1.PDF">Dry Curing Virginia-Style Ham</a></li>
+        </ul> </p>
+                `;
+            } 
+        }
+    </script>
+
+    
+
+    </body>
+    </html>

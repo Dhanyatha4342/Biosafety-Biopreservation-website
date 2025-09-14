@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="final.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    
+        
+    <title>Document</title>
+</head>
+<body>
+            <section class="header">
+                <nav>
+                 <a href="index.html"><img class="logo"src="rv-logo.png"></a>
+                 <p class="inst-name">R V College of Engineering</p>
+                 <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+                <div class = "sub-pages">
+                    <a class="sub-link" href="https://app.mypantrytracker.com/home" ><b>Virtual Pantry</b></a>
+                    <a class = "sub-link" href="Canning.html"><b>Preserve By</b></a>
+                    <a class="sub-link" href="resources.html" ><b>Resources</b></a>
+                    <a class="sub-link" href="faq.html" ><b>FAQs</b></a>
+                    <a class="sub-link" href="blog.html" ><b>Blog</b></a>
+                    <a class="sub-link" href="donations.html"><b>Donate</b></a>
+                    <a class="sub-link" href="contact.html" ><b>Contact</b></a>
+                </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+           </nav> 
+        </div>
+    
+    </section>
+    <section class="image-section">
+        
+        <div class="image-container">
+            <div class="overlay"></div>   
+            <img src="jamsandjellies.png" alt="JAMS AND JELLIES" class="background-image">
+            <h1 class="image-heading">JAMS AND JELLIES</h1>
+        </div>
+    </section>
+
+
+
+    <section class="content-container">
+        <!-- Left menu section -->
+        <div class="menu">
+            <h2>JAMS AND JELLIES</h2>
+            <ul>
+                
+                <li><a href="#" onclick="showContent('Jams')">Jams</a></li>
+                <li><a href="#" onclick="showContent('Jellies')">Jellies</a></li>
+                <li><a href="#" onclick="showContent('Conserves')">Conserves</a></li>
+                <li><a href="#" onclick="showContent('Preserves')">Preserves</a></li>
+                <li><a href="#" onclick="showContent('Marmalades')">Marmalades</a></li>
+                <li><a href="#" onclick="showContent('pickling')">Pickling</a></li>
+                <li><a href="#" onclick="showContent('Additional resources')">Additional resources</a></li>
+            </ul>
+        </div>
+
+        <!-- Right content section -->
+        <div class="content" id="content">
+            <h1>JAMS AND JELLIES</h1>
+            <p>Jelly, jam, preserves, conserves and marmalades are fruit products that are jellied or thickened. Most are preserved by sugar. Their individual characteristics depend on the kind of fruit used and the way it is prepared, the proportions of different ingredients in the mixture and the method of cooking. The characteristics of clarity or clearness, color, consistency and flavor are used to determine the quality of jellied products.
+
+                They have long been used as a traditional method for preserving seasonal fruits, effectively prolonging their shelf life while encapsulating the vibrant essence of fresh, ripe flavors. Homemade tested recipes allow for a variety of fruits, spices, and flavorings to be combined to create unique and delightful spreads.
+                
+                </p>
+        </div>
+    </section>
+
+    <script>
+        function toggleSubMenu(id) {
+            const submenu = document.getElementById(id);
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function showContent(section) {
+            const content = document.getElementById('content');
+            if (section === 'Jams') {
+                content.innerHTML = `
+                    <h1>Jams</h1>
+                    <h2>Tutti-Frutti Jam</h2>
+                    <p>with powdered pectin
+
+<br>3 cups chopped or ground pears (about 2 pounds pears)
+<br>1 large orange
+<br>¾ cup drained crushed pineapple
+<br>¼ cups chopped maraschino cherries (3-ounce bottle)
+<br>¼ cup lemon juice
+<br>1 package powdered pectin
+<br>5 cups sugar
+<br>Yield: About 6 or 7 half-pint jars
+
+<br><br>Please read Using Boiling Water Canners before beginning. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>Procedure:<br>Sterilize canning jars and prepare two-piece canning lids according to manufacturer's directions.
+
+<br><br>To prepare fruit. Sort and wash ripe pears; pare and core. Chop or grind pears. Peel orange, remove seeds and chop or grind pulp
+
+<br><br>To make jam. Measure chopped pears into a kettle. Add orange, pineapple, cherries, and lemon juice. Stir in pectin. Place on high heat and, stirring constantly, bring quickly to a full boil with bubbles over the entire surface. Add sugar, continue stirring, and heat again to full bubbling boil. Boil hard for 1 minute, stirring constantly. Remove from heat; skim.
+
+<br><br>Fill hot jam immediately into hot, sterile jars, leaving ¼ inch headspace. Wipe rims of jars with a dampened clean paper towel; adjust two-piece metal canning lids. Process in a Boiling Water Canner. </p>
+                `;
+            
+            
+            
+            } else if (section === 'Jellies') {
+                content.innerHTML = `
+                    <h1>Jellies</h1>
+                    <h2>Mint Jelly Pectin</h2>
+                    <p>with liquid pectin
+
+<br>1-¾ cups mint juice (1½ cups firmly packed fresh mint and 2¼ cups water)
+<br>3-½ cups sugar
+<br>2 tablespoons lemon juice
+<br>1 pouch liquid pectin (3 oz.)
+<br>Yield: About 3 or 4 half-pint jars
+
+<br><br>Please read Using Boiling Water Canners before beginning. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>Procedure: Sterilize canning jars and prepare two-piece canning lids according to manufacturer's directions.
+
+<br><br>To prepare juice. Wash mint, crush leaves and stems or finely chop. Place in saucepan, add water and bring quickly to a boil. Remove from heat, cover and let stand 10 minutes. (A few drops of green food coloring can be added if desired.) Strain to remove mint. Discard mint.
+
+<br><br>To make jelly. Measure 1-¾ cups mint juice into a large saucepot. Stir in the sugar and lemon juice. Place on high heat, stir constantly and bring to a full boil that cannot be stirred down. Add the liquid pectin and heat again to a full rolling boil. Boil hard for 1 minute. Remove from heat; quickly skim off foam.
+
+<br><br>Pour hot jelly immediately into hot, sterile jars, leaving ¼ inch headspace. Wipe rims of jars with a dampened clean paper towel; adjust two-piece metal canning lids. Process in a Boiling Water Canner.</p>
+                `;
+            } else if (section === 'Conserves') {
+                content.innerHTML = `
+                    <h1>Conserves</h1>
+                    <h2>Apple Conserve</h2>
+                    <p>with powdered pectin
+
+<br>4½ cups finely chopped red apples (about 3 pounds apples)
+<br>½ cup water
+<br>¼ cup lemon juice
+<br>½ cup raisins
+<br>1 package powdered pectin
+<br>5½ cups sugar
+<br>½ cup chopped nuts
+<br>Yield: About 6 or 7 half-pint jars
+
+<br><br>Please read Using Boiling Water Canners before beginning. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>Procedure: Sterilize canning jars and prepare two-piece canning lids according to manufacturer's directions.
+
+<br>To prepare fruit. Select tart apples. Sort and wash apples. Remove stem and blossom ends and core; do not pare. Chop apples fine.
+
+<br><br>To make conserve. Combine apples, water, lemon juice, and raisins in a kettle. Add pectin and stir well. Place on high heat and, stirring constantly, bring quickly to a full boil with bubbles over the entire surface. Add sugar, continue stirring, and heat again to a full bubbling boil. Boil hard for 1 minute, stirring constantly. Add nuts. Remove from heat. If desired, add 3 or 4 drops red food coloring. Skim.
+
+<br><br>Fill hot conserve immediately into hot, sterile jars, leaving ¼ inch headspace. Wipe rims of jars with a dampened clean paper towel; adjust two-piece metal canning lids. Process in a Boiling Water Canner.</p>
+                `;
+            } else if (section === 'Preserves') {
+                content.innerHTML = `
+                    <h1>Preserves</h1>
+                    <h2>Fig Preserves</h2>
+                    <p>3 quarts figs
+<br>3 quarts boiling water
+<br>4 cups sugar
+<br>1½ quarts water
+<br>2 lemons, thinly sliced (optional)
+<br>Yield: About 10 half-pint jars
+
+<br><br>Please read Using Boiling Water Canners before beginning. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>Procedure: Pour 3 quarts boiling water over figs. Let stand 15 minutes. Drain and discard liquid. Rinse figs in cold water and drain. Prepare syrup by mixing sugar, 1½ quarts water and lemon. Boil rapidly 10 minutes. Skim syrup; remove and discard lemon slices. Drop whole figs carefully into the boiling hot syrup, a few at a time, until all have been added. Cook rapidly until figs are translucent. Remove figs and place in shallow pan. Boil syrup until thick; the syrup must be boiled down until it becomes as thick as honey. Carefully pour the syrup over figs, cool and let stand 6 to 8 hours in the refrigerator.
+
+<br><br>Sterilize canning jars. Reheat figs and syrup to boiling. Fill whole figs into hot jars and cover with hot syrup, leaving ¼ inch headspace. Wipe rims of jars with a dampened clean paper towel; adjust two-piece metal canning lids. Process in a Boiling Water Canner.</p>
+                `;
+            } else if (section === 'Marmalades') {
+                content.innerHTML = `
+                    <h1>Marmalades</h1>
+                    <h2>Apple Marmalade</h2>
+                    <p>without added pectin
+
+<br>8 cups thinly sliced apples (about 3 pounds)
+<br>1 orange
+<br>1½ cups water
+<br>5 cups sugar
+<br>2 tablespoons lemon juice
+<br>Yield: About 6 or 7 half-pint jars
+
+<br><br>Please read Using Boiling Water Canners before beginning. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>Procedure: Sterilize canning jars and prepare two-piece canning lids according to manufacturer's directions.
+
+<br><br>To prepare fruit. Select tart apples. Wash, pare, quarter, and core the apples. Slice thin. Quarter the orange, remove any seeds, and slice very thin.
+
+<br><br>To make marmalade. Heat water and sugar until sugar is dissolved. Add the lemon juice and fruit. Boil rapidly, stirring constantly, to 9 degrees F above the boiling point of water, or until the mixture thickens. Remove from heat; skim.
+
+<br><br>Fill hot marmalade immediately into hot, sterile jars, leaving ¼ inch headspace. Wipe rims of jars with a dampened clean paper towel; adjust two-piece metal canning lids. Process in a Boiling Water Canner.</p>
+                `;
+            }
+            else if (section === 'Additional resources') {
+                content.innerHTML = `
+                    <h1>Additional resources</h1>
+                    <p>New Mexico State University Cooperative Extension Service: Home Canned Sweet Spreads Made with Green Chile
+<br><br>North Dakota State University Extension: From the Garden or Orchard to the Table: Jams and Jellies from North Dakota Fruits
+<br><br>Information on fruit butters, syrups, and pureés can be found under Canning Fruits and Fruit Products</p>
+                `;
+            }
+        }
+    </script>
+
+    
+
+    </body>
+    </html>

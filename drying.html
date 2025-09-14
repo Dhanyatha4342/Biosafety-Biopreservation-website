@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="final.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    
+        
+    <title>Document</title>
+</head>
+<body>
+            <section class="header">
+                <nav>
+                 <a href="index.html"><img class="logo"src="rv-logo.png"></a>
+                 <p class="inst-name">R V College of Engineering</p>
+                 <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+                <div class = "sub-pages">
+                    <a class="sub-link" href="https://app.mypantrytracker.com/home" ><b>Virtual Pantry</b></a>
+                    <a class = "sub-link" href="Canning.html"><b>Preserve By</b></a>
+                    <a class="sub-link" href="resources.html" ><b>Resources</b></a>
+                    <a class="sub-link" href="faq.html" ><b>FAQs</b></a>
+                    <a class="sub-link" href="blog.html" ><b>Blog</b></a>
+                    <a class="sub-link" href="donations.html"><b>Donate</b></a>
+                    <a class="sub-link" href="contact.html" ><b>Contact</b></a>
+                </div>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+           </nav> 
+        </div>
+    
+    </section>
+    <section class="image-section">
+        
+        <div class="image-container">
+            <div class="overlay"></div>   
+            <img src="drying.jpg" alt="CANNING" class="background-image">
+            <h1 class="image-heading">DRYING</h1>
+        </div>
+    </section>
+
+
+
+    <section class="content-container">
+        <!-- Left menu section -->
+        <div class="menu">
+            <h2>DRYING</h2>
+            <ul>
+                <li><a href="#" onclick="showContent('Packaging and Storing Dried Foods')">Packaging and Storing Dried Foods</a></li>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('Recipes-submenu')">Recipes</a>
+                    <ul id="Recipes-submenu" class="submenu">
+                        <li><a href="#" onclick="showContent('Peanuts')">Peanuts</a></li>
+                        <li><a href="#" onclick="showContent('Herbs')">Herbs</a></li>
+                        <li><a href="#" onclick="showContent('Sunflower Seeds')">Sunflower Seeds</a></li>
+                        
+                    </ul>
+                
+              
+            </ul>
+        </div>
+
+        <!-- Right content section -->
+        <div class="content" id="content">
+            <h1>DRYING</h1>
+            <p>Drying is one of the oldest methods of preserving food for later use. It can either be an alternative to canning and freezing or complement these methods. Drying food is simple, safe and easy to learn. With modern food dehydrators fruit leathers, banana chips, pumpkin seeds and beef jerky can all be dried year-round at home. Dried foods are ideal for backpacking and camping. They are lightweight, take up little space and do not require refrigeration. 
+
+                <br><br>Meat jerky, dried nuts and seeds are good sources of protein for a snack or a meal. The fruit leathers and dried fruit chips provide plenty of quick energy.
+                
+                <br><br>Dried vegetables can be prepared separately or combined to make a soup. While camp is being set up, add water to the dried foods to allow sufficient time (1 to 2 hours) to reconstitute them. To retain vitamins, use the soaking water for cooking.</p>
+        </div>
+    </section>
+
+    <script>
+        function toggleSubMenu(id) {
+            const submenu = document.getElementById(id);
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function showContent(section) {
+            const content = document.getElementById('content');
+            if (section === 'How Canning Preserves Foods') {
+                content.innerHTML = `
+                    <h1>How Canning Preserves Foods</h1>
+                    <p> </p>
+                `;
+            
+            
+            
+            } else if (section === 'Packaging and Storing Dried Foods') {
+                content.innerHTML = `
+                    <h1>Packaging and Storing Dried Foods</h1>
+                    <p>Dried foods are susceptible to insect contamination and moisture reabsorption and must be properly packaged and stored immediately. First, cool completely. Warm food causes sweating which could provide enough moisture for mold to grow. Pack foods into clean, dry insect-proof containers as tightly as possible without crushing.
+
+<br><br>Store dried foods in clean, dry home canning jars, plastic freezer containers with tight-fitting lids or in plastic freezer bags. Vacuum packaging is also a good option. Pack foods in amounts that can be used all at once. Each time a package is re-opened, the food is exposed to air and moisture that can lower the quality of the food and result in spoilage.
+
+<br><br>Pack food in amounts that will be used in a recipe. Every time a package is re-opened, the food is exposed to air and moisture that lower the quality of the food.
+
+<br><br>Fruit that has been sulfured should not touch metal. Place the fruit in a plastic bag before storing it in a metal can. Sulfur fumes will react with the metal and cause color changes in the fruit.
+
+<br><br>Dried foods should be stored in cool, dry, dark areas. Recommended storage times for dried foods range from 4 months to 1 year. Because food quality is affected by heat, the storage temperature helps determine the length of storage; the higher the temperature, the shorter the storage time. Most dried fruits can be stored for 1 year at 60ºF, 6 months at 80ºF. Vegetables have about half the shelf-life of fruits.
+
+<br><br>Foods that are packaged seemingly "bone dry" can spoil if moisture is reabsorbed during storage. Check dried foods frequently during storage to see if they are still dry. Glass containers are excellent for storage because any moisture that collects on the inside can be seen easily. Foods affected by moisture, but not spoiled, should be used immediately or redried and repackaged. Moldy foods should be discarded.
+
+<br><br>Conditioning Fruits
+<br>The moisture content of home dried fruit should be about 20 percent. When the fruit is taken from the dehydrator, the remaining moisture may not be distributed equally among the pieces because of their size or their location in the dehydrator. Conditioning is the process used to equalize the moisture. It reduces the risk of mold growth.
+
+<br><br>To condition the fruit, take the dried fruit that has cooled and pack it loosely in plastic or glass jars. Seal the containers and let them stand for 7 to 10 days. The excess moisture in some pieces will be absorbed by the drier pieces. Shake the jars daily to separate the pieces and check the moisture condensation. If condensation develops in the jar, return the fruit to the dehydrator for more drying. After conditioning, package and store the fruit as described above.
+
+<br><br>Determining Dryness of Vegetables
+<br>Vegetables should be dried until they are brittle or "crisp." Some vegetables actually shatter if hit with a hammer. At this stage, they should contain about 10 percent moisture. Because they are so dry, they do not need conditioning like fruits.
+
+ 
+
+<br><br>This document was extracted from "So Easy to Preserve", 6th ed. 2014. Bulletin 989, Cooperative Extension Service, The University of Georgia, Athens. Revised by Elizabeth L. Andress. Ph.D. and Judy A. Harrison, Ph.D., Extension Foods Specialists.</p>
+                `;
+            } else if (section === 'Peanuts') {
+                content.innerHTML = `
+                    <h1>Peanuts</h1>
+                    <p>Peanuts are actually a legume instead of a nut and can be dried and roasted at slightly higher temperatures. Peanuts can be dried shelled or unshelled. Spread in single layer and dry at 130ºF. Peanuts are dry when their shells have hardened to a brittle state. Crack one. The nut meat should be tender, but not shriveled.
+
+<br><br>To roast peanuts in the shell, place them in a shallow pan at 300ºF for 30 to 40 minutes. If they are shelled, roast them for 20 to 25 minutes and stir frequently to prevent scorching.</p>
+                `;
+            } else if (section === 'Sunflower Seeds') {
+                content.innerHTML = `
+                    <h1>Sunflower Seeds</h1>
+                    <p>Sunflower seeds usually are left on the flower to dry. The flower may have to be wrapped with cheesecloth to prevent the birds from eating the seeds.
+
+<br><br>Seeds may be dried in the sun or in a dehydrator at 100ºF. Higher temperature affects the flavor.
+
+<br><br>When seeds are dried, they can be roasted in a shallow pan at 300ºF for 10 to 15 minutes.
+
+ 
+
+<br><br>This document was extracted from "So Easy to Preserve", 6th ed. 2014. Bulletin 989, Cooperative Extension Service, The University of Georgia, Athens. Revised by Elizabeth L. Andress. Ph.D. and Judy A. Harrison, Ph.D., Extension Foods Specialists.</p>
+                `;
+            } else if (section === 'Herbs') {
+                content.innerHTML = `
+                    <h1>Herbs</h1>
+                    <p>Drying is the easiest method of preserving herbs. Simply expose the leaves, flowers or seeds to warm, dry air. Leave the herbs in a well ventilated area until the moisture evaporates. Sun drying is not recommended because the herbs can lose flavor and color.
+
+<br><br>The best time to harvest most herbs for drying is just before the flowers first open when they are in the bursting bud stage. Gather the herbs in the early morning after the dew has evaporated to minimize wilting. Avoid bruising the leaves. They should not lie in the sun or unattended after harvesting. Rinse herbs in cool water and gently shake to remove excess moisture. Discard all bruised, soiled or imperfect leaves and stems.
+
+<br><br>Dehydrator drying is a fast and easy way to dry high quality herbs because temperature and air circulation can be controlled. Pre-heat dehydrator with the thermostat set to 95°F to 115°F. In areas with higher humidity, temperatures as high as 125°F may be needed. After rinsing under cool, running water and shaking to remove excess moisture, place the herbs in a single layer on dehydrator trays. Drying times may vary from 1 to 4 hours. Check periodically. Herbs are dry when they crumble, and stems break when bent. Check your dehydrator instruction booklet for specific details.
+
+<br><br>Less Tender Herbs — The more sturdy herbs such as rosemary, sage, thyme, summer savory and parsley are the easiest to dry without a dehydrator. Tie them into small bundles and hang them to air dry. Air drying outdoors is often possible; however, better color and flavor retention usually results from drying indoors.
+
+<br><br>Tender-Leaf Herbs — Basil, oregano, tarragon, lemon balm and the mints have a high moisture content and will mold if not dried quickly. Try hanging the tender-leaf herbs or those with seeds inside paper bags to dry. Tear or punch holes in the sides of the bag. Suspend a small bunch (large amounts will mold) of herbs in a bag and close the top with a rubber band. Place where air currents will circulate through the bag. Any leaves and seeds that fall off will be caught in the bottom of the bag.
+
+<br><br>Another method, especially nice for mint, sage or bay leaf, is to dry the leaves separately. In areas of high humidity, it will work better than air drying whole stems. Remove the best leaves from the stems. Lay the leaves on a paper towel, without allowing leaves to touch. Cover with another towel and layer of leaves. Five layers may be dried at one time using this method. Dry in a very cool oven. The oven light of an electric range or the pilot light of a gas range furnishes enough heat for overnight drying. Leaves dry flat and retain a good color.
+
+<br><br>Microwave ovens are a fast way to dry herbs when only small quantities are to be prepared. Follow the directions that come with your microwave oven.
+
+<br><br>When the leaves are crispy dry and crumple easily between the fingers, they are ready to be packaged and stored. Dried leaves may be left whole and crumpled as used, or coarsely crumpled before storage. Husks can be removed from seeds by rubbing the seeds between the hands and blowing away the chaff. Place herbs in airtight containers and store in a cool, dry, dark area to protect color and fragrance.
+
+<br><br>Dried herbs are usually 3 to 4 times stronger than the fresh herbs. To substitute dried herbs in a recipe that calls for fresh herbs, use 1/4 to 1/3 of the amount listed in the recipe.
+
+ 
+
+<br><br>This document was extracted from "So Easy to Preserve", 6th ed. 2014. Bulletin 989, Cooperative Extension Service, The University of Georgia, Athens. Revised by Elizabeth L. Andress. Ph.D. and Judy A. Harrison, Ph.D., Extension Foods Specialists.</p>
+                `;
+            }
+        }
+    </script>
+
+    
+
+    </body>
+    </html>

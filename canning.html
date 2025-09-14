@@ -1,0 +1,473 @@
+
+    
+    <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="final.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <nav class="header-content">
+            <a href="index.html"><img class="logo" src="rv-logo.png" alt="Logo"></a>
+            <p class="inst-name">R V College of Engineering</p>
+        </nav> 
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href=""><b>Preserve By</b></a></li>
+                <li><a href=""><b>Resources</b></a></li>
+                <li><a href=""><b>Newsflash</b></a></li>
+                <li><a href=""><b>FAQs</b></a></li>
+                <li><a href=""><b>Blog</b></a></li>
+                <li><a href=""><b>Donate</b></a></li>
+            </ul>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </div>
+    </section>
+    <section class="image-section">
+        <div class="image-container">
+            <img src="canning.jpg" alt="CANNING" class="background-image">
+            <h1 class="image-heading">CANNING</h1>
+        </div>
+    </section>
+</body>
+</html>
+    
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <link rel="stylesheet" href="final.css">
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+     
+     
+         
+     <title>Document</title>
+ </head>
+ <body>
+             <section class="header">
+                 <nav>
+                  <a href="index.html"><img class="logo"src="rv-logo.png"></a>
+                  <p class="inst-name">R V College of Engineering</p>
+                  <div class="nav-links" id="navLinks">
+                 <i class="fa fa-times"onclick="hideMenu()"></i>
+                 <div class = "sub-pages">
+                    <a class="sub-link" href="https://app.mypantrytracker.com/home" ><b>Virtual Pantry</b></a>
+                    <a class = "sub-link" href="Canning.html"><b>Preserve By</b></a>
+                    <a class="sub-link" href="resources.html" ><b>Resources</b></a>
+                    <a class="sub-link" href="faq.html" ><b>FAQs</b></a>
+                    <a class="sub-link" href="blog.html" ><b>Blog</b></a>
+                    <a class="sub-link" href="donations.html"><b>Donate</b></a>
+                    <a class="sub-link" href="contact.html" ><b>Contact</b></a>
+                </div>
+             <i class="fa fa-bars"onclick="showMenu()"></i>
+            </nav> 
+         </div>
+     
+     </section>
+     <section class="image-section">
+         
+         <div class="image-container">
+             <div class="overlay"></div>   
+             <img src="canning.jpg" alt="CANNING" class="background-image">
+             <h1 class="image-heading">CANNING</h1>
+         </div>
+     </section>
+ 
+ 
+ 
+     <section class="content-container">
+         <!-- Left menu section -->
+         <div class="menu">
+             <h2>CANNING</h2>
+             <ul>
+                 <li>
+                     <a href="#" onclick="toggleSubMenu('Canning general information-submenu')">Canning general information</a>
+                     <ul id="Canning general information-submenu" class="submenu">
+                         <li><a href="#" onclick="showContent('How Canning Preserves Foods')">How Canning Preserves Foods</a></li>
+                         <li><a href="#" onclick="showContent('Equipment and Methods Not Recommended')">Equipment and Methods Not Recommended</a></li>
+                         <li><a href="#" onclick="showContent('Identifying and Handling Spoiled Canned Food')">Identifying and Handling Spoiled Canned Food</a></li>
+                         <li><a href="#" onclick="showContent('Preventing Spoilage')">Preventing Spoilage</a></li>
+                     </ul>
+
+                     <li>
+                        <a href="#" onclick="toggleSubMenu('Canning fruit and fruit products-submenu')">Canning fruit and fruit products</a>
+                        <ul id="Canning fruit and fruit products-submenu" class="submenu">
+                            <li><a href="#" onclick="showContent('Figs')">Figs</a></li>
+                            <li><a href="#" onclick="showContent('Mango Sauce')">Mango Sauce</a></li>
+                            <li><a href="#" onclick="showContent('Apple Juice')">Apple Juice</a></li>
+                            <li><a href="#" onclick="showContent('Lemon Curd, Canned')">Lemon Curd, Canned</a></li>
+                        </ul>
+
+                        <li>
+                            <a href="#" onclick="toggleSubMenu('Canning nuts and nut products-submenu')">Canning nuts and nut products</a>
+                            <ul id="Canning nuts and nut products-submenu" class="submenu">
+                                <li><a href="#" onclick="showContent('Peanuts, Green')">Peanuts, Green</a></li>
+                            </ul>
+
+                            <li>
+                                <a href="#" onclick="toggleSubMenu('Canning Salsa-submenu')">Canning Salsa</a>
+                                <ul id="Canning Salsa-submenu" class="submenu">
+                                    <li><a href="#" onclick="showContent('Ingredients for Salsa Recipes')">Ingredients for Salsa Recipes</a></li>
+                                    <li><a href="#" onclick="showContent('Choice Salsa')">Choice Salsa</a></li>
+                                </ul>
+
+                                <li>
+                                    <a href="#" onclick="toggleSubMenu('Canning Vegetable and Vegetable Products-submenu')">Canning Vegetable and Vegetable Products</a>
+                                    <ul id="Canning Vegetable and Vegetable Products-submenu" class="submenu">
+                                        <li><a href="#" onclick="showContent('Beans, Baked')">Beans, Baked</a></li>
+                                        <li><a href="#" onclick="showContent('Mushrooms – Whole or Sliced')">Mushrooms – Whole or Sliced</a></li>
+                                    </ul>
+                 
+                 
+                 
+             </ul>
+         </div>
+ 
+         <!-- Right content section -->
+         <div class="content" id="content">
+             <h1>CANNING</h1>
+             <p>Canning is an important, safe method of food preservation if practiced properly. The canning process involves placing foods in jars or cans and heating them to a temperature that destroys microorganisms that could be a health hazard or cause the food to spoil. Canning also inactivates enzymes that could cause the food to spoil. Air is driven from the jar or can during heating and as it cools a vacuum seal is formed. This vacuum seal prevents air from getting back into the product bringing with it microorganisms to recontaminate the food.</p>
+         </div>
+     </section>
+ 
+     <script>
+         function toggleSubMenu(id) {
+             const submenu = document.getElementById(id);
+             submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+         }
+ 
+         function showContent(section) {
+             const content = document.getElementById('content');
+             if (section === 'How Canning Preserves Foods') {
+                 content.innerHTML = `
+                     <h1>How Canning Preserves Foods</h1>
+                     <p>The high percentage of water in most fresh foods makes them very perishable. They spoil or lose their quality for several reasons:
+
+<br>growth of undesirable microorganisms-bacteria, molds, and yeasts,
+<br>activity of food enzymes,
+<br>reactions with oxygen,
+<br>moisture loss.
+<br><br>Microorganisms live and multiply quickly on the surfaces of fresh food and on the inside of bruised, insect-damaged, and diseased food. Oxygen and enzymes are present throughout fresh food tissues.
+
+<br><br>Proper canning practices include:
+
+<br>carefully selecting and washing fresh food,
+<br>peeling some fresh foods,
+<br>hot packing many foods,
+<br>adding acids (lemon juice or vinegar) to some foods,
+<br>using acceptable jars and self-sealing lids,
+<br>processing jars in a boiling-water or pressure canner for the correct period of time.
+<br><br>Collectively, these practices remove oxygen; destroy enzymes; prevent the growth of undesirable bacteria, yeasts, and molds; and help form a high vacuum in jars. Good vacuums form tight seals which keep liquid in and air and microorganisms out.
+
+ 
+
+<br><br>Adapted from the "Complete Guide to Home Canning," Agriculture Information Bulletin No. 539, NIFA-USDA (Revised 2015). </p>
+                 `;
+             
+             
+             
+             } else if (section === 'Equipment and Methods Not Recommended') {
+                 content.innerHTML = `
+                     <h1>Equipment and Methods Not Recommended</h1>
+                     <p>Open-kettle canning and the processing of freshly filled jars in conventional ovens, microwave ovens, and dishwashers are not recommended, because these practices do not prevent all risks of spoilage. Steam canners are not currently recommended because processing times for use with current models are still being researched. It is not recommended that pressure processes in excess of 15 PSI be applied when using new pressure canning equipment. So-called canning powders are useless as preservatives and do not replace the need for proper heat processing. Jars with wire bails and glass caps make attractive antiques or storage containers for dry food ingredients but are not recommended for use in canning. Neither one-piece zinc porcelain-lined caps nor zinc caps that use flat rubber rings for sealing jars are recommended any longer.
+
+<br>The language above is from the USDA "Complete Guide to Home Canning" (2015 revision).
+
+<br><br>Update on Steam Canning. You may also want to read our National Center Burning Issue: Using Atmospheric Steam Canners. The National Center collaborated with the University of Wisconsin to have research conducted on appropriate use of atmospheric steam canners. As long as certain critical controls can be maintained at various steps in the canning process, there are many products appropriate for canning in atmospheric steam canners. See the Burning Issue above for more information and a link to the University of Wisconsin directions. It will take some time to integrate advice into the USDA "Complete Guide to Home Canning" or other publications.
+
+<br><br>"Dry Canning" Not Recommended. There are also some other methods that are not recommended being circulated among home canners. Canning vegetables or any food pieces without the covering liquid that was used in process research can result in under-processing and in the case of vegetables, a risk of botulism. Please read more about this hazardous practice at https://preservingfoodathome.com/2020/06/25/dry-canning-raw-vegetables-is-an-unsafe-practice/.
+
+<br><br>The USDA and University of Georgia researched and science-based home canning processes are meant to be used with the food preparation and jar filling directions in the recommendation.
+
+<br><br>Another use of the terminology "dry canning" is what some people are calling a method they promote of storing dry foods by heating them in canning jars in an oven. This is also not a recommended science-based method of storing dry foods. Read more at https://preservingfoodathome.com/2020/04/16/dry-canning-isnt-canning-to-me/.
+
+</p>
+                 `;
+             } else if (section === 'Identifying and Handling Spoiled Canned Food') {
+                 content.innerHTML = `
+                     <h1>Identifying and Handling Spoiled Canned Food</h1>
+                     <p>Do not taste food from a jar with an unsealed lid or food that shows signs of spoilage. You can more easily detect some types of spoilage in jars stored without screw bands. Growth of spoilage bacteria and yeast produces gas which pressurizes the food, swells lids, and breaks jar seals. As each stored jar is selected for use, examine its lid for tightness and vacuum. Lids with concave centers have good seals.
+
+<br><br>Next, while holding the jar upright at eye level, rotate the jar and examine its outside surface for streaks of dried food originating at the top of the jar. Look at the contents for rising air bubbles and unnatural color.
+
+<br><br>While opening the jar, smell for unnatural odors and look for spurting liquid and cotton-like mold growth (white, blue, black, or green) on the top food surface and underside of lid.
+
+<br><br>Spoiled low-acid foods, including tomatoes, may exhibit different kinds of spoilage evidence or very little evidence. Therefore, all suspect containers of spoiled low-acid foods, including tomatoes, should be treated as having produced botulinum toxin and handled carefully in one of two ways:
+
+<br><br>If the swollen metal cans or suspect glass jars are still sealed, place them in a heavy garbage bag. Close and place the bag in a regular trash container or dispose in a nearby landfill.
+<br><br>If the suspect cans or glass jars are unsealed, open, or leaking, they should be detoxified before disposal.
+<br><br>Detoxification process: Wear disposable rubber or heavy plastic gloves. Carefully place the suspect containers and lids on their sides in an 8-quart volume or larger stock pot, pan, or boiling-water canner. Wash your hands with gloves thoroughly. Carefully add water to the pot and avoid splashing the water. The water should completely cover the containers with a minimum of a 1-inch level above the containers. Place a lid on the pot and heat the water to boiling. Boil 30 minutes to ensure detoxifying the food and all container components. Cool and discard the containers, their lids, and food in the trash or dispose in a nearby landfill.
+
+<br><br>Cleaning up the area: Contact with botulinum toxin can be fatal whether it is ingested or enters through any openings in the skin. Take care to avoid contact with suspect foods or liquids. Wear rubber or heavy plastic gloves when handling suspect foods or cleaning up contaminated work surfaces and equipment. A fresh solution of 1 part unscented liquid household chlorine bleach (5 to 6% sodium hypochlorite) to 5 parts clean water should be used to treat work surfaces, equipment, or other items, including can openers and clothing, that may have come in contact with suspect foods or liquids. Spray or wet contaminated surfaces with the bleach solution and let stand for 30 minutes. Wearing gloves, wipe up treated spills with paper towels being careful to minimize the spread of contamination. Dispose of these paper towels by placing them in a plastic bag before putting them in the trash. Next, apply the bleach solution to all surfaces and equipment again, and let stand for 30 minutes and rinse. As a last step, thoroughly wash all detoxified counters, containers, equipment, clothing, etc. Discard gloves when cleaning process is complete. (Note: Bleach is an irritant itself and should not be inhaled or allowed to come in contact with the skin.)</p>
+                 `;
+             } else if (section === 'Preventing Spoilage') {
+                 content.innerHTML = `
+                     <h1>Preventing Spoilage</h1>
+                     <p>Even though sugar helps preserve jellies and jams, molds can grow on the surface of these products. Research now indicates that the mold which people usually scrape off the surface of jellies may not be as harmless as it seems. Mycotoxins have been found in some jars of jelly having surface mold growth. Mycotoxins are known to cause cancer in animals; their effects on humans are still being researched.
+
+<br><br>Because of possible mold contamination, paraffin or wax seals are no longer recommended for any sweet spread, including jellies. To prevent growth of molds and loss of good flavor or color, fill products hot into sterile Mason jars, leaving 1/4-inch headspace, seal with self-sealing lids, and process 5 minutes in a boiling-water canner Correct process time at higher elevations by adding 1 additional minute per 1,000 ft above sea level. If unsterile jars are used, the filled jars should be processed 10 minutes. Use of sterile jars is preferred, especially when fruits are low in pectin, since the added 5-minute process time may cause weak gels. </p>
+                 `;
+             } else if (section === 'Figs') {
+                 content.innerHTML = `
+                     <h1>Figs</h1>
+                     <p>Quantity: An average of 16 pounds is needed per canner load of 7 quarts; an average of 11 pounds is needed per canner load of 9 pints-an average of 2-1/2 pounds yields 1 quart.
+
+<br><br>Quality: Select firm, ripe, uncracked figs. The mature color depends on the variety. Avoid overripe figs with very soft flesh.
+
+<br><br>Please read Using Boiling Water Canners before beginning. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>Procedure: Wash figs thoroughly in clean water Drain. Do not peel or remove stems. Cover figs with water and boil 2 minutes. Drain. Gently boil figs in light syrup for 5 minutes. Add 2 tablespoons bottled lemon juice per quart or 1 tablespoon per pint to the jars; or add 1/2 teaspoon citric acid per quart or 1/4 teaspoon per pint to the jars. Fill jars with hot figs and cooking syrup, leaving 1/2-inch headspace.</p>
+                 `;
+             }
+             else if (section === 'Mango Sauce') {
+                 content.innerHTML = `
+                     <h1>Mango Sauce</h1>
+                     <p>5½ cups or 3¼ pounds mango puree (use slightly under-ripe to just-ripe mango) (from about 5 pounds, or 5 to 6 whole, large, non-fibrous mangoes, as purchased)
+<br>6 tablespoons honey
+<br>4 tablespoons bottled lemon juice
+<br>¾ cup sugar
+<br>2½ teaspoons (7500 milligrams) ascorbic acid
+<br>1/8 teaspoon ground cinnamon
+<br>1/8 teaspoon ground nutmeg
+<br><br>Caution: Handling green mangoes may irritate the skin of some people in the same way as poison ivy. (They belong to the same plant family.) To avoid this reaction, wear plastic or rubber gloves while working with raw green mango. Do not touch your face, lips or eyes after touching or cutting raw green mangoes until all traces are washed away.
+
+<br>Yield: About 6 half-pint jars
+
+<br><br>Storage Notes: Store in a dark place, away from direct light, to preserve the color of the canned sauce. This sauce is best used within 4 to 6 months; otherwise, discoloration may occur.
+
+<br><br>Please read Using Boiling Water Canners before beginning. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>Procedure:
+ 
+
+  	<br>1.  	Wash and rinse half-pint canning jars; keep hot until ready to use. Prepare lids according to manufacturer's directions.
+ 
+  	<br>2.	Wash, peel, and separate mango flesh from seed. Chop mango flesh into chunks and purée in blender or food processor until smooth.
+ 
+  	<br>3.	Combine all ingredients in a 6- to 8-quart Dutch oven or stockpot and heat on medium-high heat, with continuous stirring, until the mixture reaches 200°F. The mixture will sputter as it is being heated, so be sure to wear gloves or oven mitts to avoid burning skin.
+ 
+  	<br>4.	Fill hot sauce into clean, hot half-pint jars, leaving ¼-inch headspace. Remove air bubbles and adjust headspace if needed. Wipe rims of jars with a dampened, clean paper towel; adjust two-piece metal canning lids.
+ 
+  	<br>5.	Process in a boiling water canner according to the recommendations in Table 1. Let cool, undisturbed, for 12 to 24 hours and check for seals.</p>
+                 `;
+             }
+             else if (section === 'Apple Juice') {
+                 content.innerHTML = `
+                     <h1>Apple Juice</h1>
+                     <p>Quality: Good quality apple juice is made from a blend of varieties. For best results, buy fresh juice from a local cider maker within 24 hours after it has been pressed.
+
+<br><br>Please read Using Boiling Water Canners before beginning. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>Procedure: Refrigerate juice for 24 to 48 hours. Without mixing, carefully pour off clear liquid and discard sediment. Strain clear liquid through a paper coffee filter or double layers of damp cheesecloth.
+
+<br><br>Heat quickly, stirring occasionally, until juice begins to boil. Fill immediately into sterile pint or quart jars or fill into clean half-gallon jars, leaving 1/4-inch headspace. For information about presterilizing jars see "Sterilization of Empty Jars".</p>
+                 `;
+             }
+             else if (section === 'Lemon Curd, Canned') {
+                 content.innerHTML = `
+                     <h1>Lemon Curd, Canned</h1>
+                     <p>2½ cups superfine sugar*
+<br>½ cup lemon zest (freshly zested), optional
+<br>1 cup bottled lemon juice**
+<br>¾ cup unsalted butter, chilled, cut into approximately ¾" pieces
+<br>7 large egg yolks
+<br>4 large whole eggs
+<br><br>Special Equipment Needed: lemon zester, balloon whisk, 1½ quart double boiler*** (the top double boiler pan should be at least 1½-quart volume), strainer, kitchen thermometer measuring at least up to 180°F, glass or stainless steel medium mixing bowl, silicone spatula or cooking spoon, and equipment for boiling water canning.
+
+<br><br>Yield: About 3 to 4 half-pint jars
+
+<br><br>Please read Using Boiling Water Canners before beginning. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>Procedure:
+ 
+
+  	<br>1.  	Wash 4 half-pint canning jars with warm, soapy water. Rinse well; keep hot until ready to fill. Prepare canning lids according to manufacturer's directions.
+ 
+  	<br>2.	Fill boiling water canner with enough water to cover the filled jars by 1 to 2 inches. Use a thermometer to preheat the water to 180°F by the time filled jars are ready to be added.
+
+<br>Caution: Do not heat the water in the canner to more than 180°F before jars are added. If the water in the canner is too hot when jars are added, the process time will not be long enough. The time it takes for the canner to reach boiling after the jars are added is expected to be 25 to 30 minutes for this product. Process time starts after the water in the canner comes to a full boil over the tops of the jars.
+ 
+  	<br>3.	Combine the sugar and lemon zest in a small bowl, stir to mix, and set aside about 30 minutes. Pre-measure the lemon juice and prepare the chilled butter pieces.
+ 
+  	<br>4.	Heat water in the bottom pan of the double boiler until it boils gently. The water should not boil vigorously or touch the bottom of the top double boiler pan or bowl in which the curd is to be cooked. Steam produced will be sufficient for the cooking process to occur.
+ 
+  	<br>5.	In the top of the double boiler, on the counter top or table, whisk the egg yolks and whole eggs together until thoroughly mixed. Slowly whisk in the sugar and zest, blending until well mixed and smooth. Blend in the lemon juice and then add the butter pieces to the mixture.
+ 
+  	<br>6.	Place the top of the double boiler over boiling water in the bottom pan. Stir gently but continuously with a silicone spatula or cooking spoon, to prevent the mixture from sticking to the bottom of the pan. Continue cooking until the mixture reaches a temperature of 170°F. Use a food thermometer to monitor the temperature.
+ 
+  	<br>7.	Remove the double boiler pan from the stove and place on a protected surface, such as a dish cloth or towel on the counter top. Continue to stir gently until the curd thickens (about 5 minutes). Strain curd through a mesh strainer into a glass or stainless steel bowl; discard collected zest.
+ 
+  	<br>8.	Fill hot strained curd into the clean, hot half-pint jars, leaving ½-inch headspace. Remove air bubbles and adjust headspace if needed. Wipe rims of jars with a dampened, clean paper towel; apply two-piece metal canning lids.
+ 
+  	<br>9.	Process in the prepared boiling water canner according to the recommendations in Table 1. Let cool, undisturbed, for 12 to 24 hours and check for seals.
+    <br><br>Shelf Life: For best quality, store in a cool, dark place (away from light). Plan to use canned lemon curd within 3 to 4 months. Browning and/or separation may occur with longer storage; discard any time these changes are observed.
+
+<br><br>Prepared lemon curd can also be frozen instead of canned for up to 1 year without quality changes when thawed. Package in freezer containers after straining and cooling to room temperature. To thaw, place container in a refrigerator at 40°F or lower for 24 hours before intended use. After thawing, consume within 4 weeks. (See Freezer Lemon Curd)
+
+<br><br>Preparation Notes:
+
+<br>* If superfine sugar is not available, run granulated sugar through a grinder or food processor for 1 minute, let settle, and use in place of superfine sugar. Do not use powdered sugar.
+
+<br>** Bottled lemon juice is used to standardize acidity. Fresh lemon juice can vary in acidity and is not recommended.
+
+<br>*** If a double boiler is not available, a substitute can be made with a large bowl or saucepan that can fit partway down into a saucepan of a smaller diameter. If the bottom pan has a larger diameter, the top bowl or pan should have a handle(s) that can rest on the rim of the lower pan.
+
+<br><br>Variation:
+
+<br>For Lime Curd, use the same recipe but substitute 1 cup bottled lime juice and ¼ cup fresh lime zest for the lemon juice and zest.
+
+<br><br>Other citrus or fruit curds are not recommended for canning at this time.
+
+ 
+
+<br><br>Developed at The University of Georgia, Athens, for the National Center for Home Food Preservation. Released by Elizabeth L. Andress, Ph.D., Department of Foods and Nutrition, College of Family and Consumer Sciences. December 2004.</p>
+                 `;
+             }
+             else if (section === 'Peanuts, Green') {
+                 content.innerHTML = `
+                     <h1>Peanuts, Green</h1>
+                     <p>. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>Hot Pack – Select fully mature, green peanuts, clean and wash. Soak in fresh water for one hour. Discard water, cover with fresh water and soak for another hour. Repeat this soaking process one more time, for a total soaking time of three hours, using fresh water each time. Then parboil the peanuts for 10 minutes in fresh water and drain.
+
+<br><br>Pack the hot peanuts into hot jars, leaving ½ inch headspace. Fill jar to ½ inch from the top with boiling brine (1 cup salt per gallon of water). Remove air bubbles. Wipe jar rims. Adjust lids.</p>
+                 `;
+             }
+             else if (section === 'Ingredients for Salsa Recipes') {
+                 content.innerHTML = `
+                     <h1>Ingredients for Salsa Recipes</h1>
+                     <p>TOMATOES
+<br>The type of tomato you use often affects the quality of salsas. Paste tomatoes, such as Roma, have firmer flesh and produce thicker salsas than large slicing tomatoes. Although both types make good salsas, slicing tomatoes usually yield a thinner, more watery salsa than paste tomatoes. Salsa can be thickened by adding tomato paste.
+
+<br><br>Canning is not a good way to use overripe or spoiling tomatoes. Use only high quality tomatoes for canning salsa or any other tomato product. Do not use tomatoes from dead or frost-killed vines. Poor quality or overripe tomatoes will yield a very poor salsa and may spoil.
+
+<br><br>Where recipes call for peeled or skinned tomatoes, remove the skin by dipping tomatoes into boiling water for 30-60 seconds or until skins split. Dip in cold water, then slip off skins and remove cores and seeds.
+
+<br><br>You may substitute green tomatoes or tomatillos for tomatoes in any of the salsa recipes developed by Washington State University.
+
+<br><br>PEPPERS
+<br>Chile peppers range from mild to fiery in taste. Very hot peppers are usually small (1 to 3 inches long); mild peppers are usually bigger (4 to 10 inches long). Anaheim, Ancho, College, Colorado and Hungarian Yellow Wax are mild pepper varieties. Choose a mild pepper when the recipe calls for long green chiles.
+
+<br><br>Small, very hot peppers provide a distinct taste to salsas. Jalapeño is the most popular hot pepper. Other varieties include Serrano, Cayenne, Habanero and Tabasco. Use rubber gloves when you cut or dice these peppers because they cause extreme irritation to the skin. Do not touch your face, particularly the area around your eyes, when you are working with hot chiles.
+
+<br><br>You may substitute bell peppers for some or all of the long green chiles. Canned chiles may be used in place of fresh.
+
+<br><br>Use only high quality peppers. Do not increase the total amount of peppers in any recipe. However, you may substitute one type of pepper for another.
+
+<br><br>The skin of long green chiles may be tough and can be removed by heating the peppers. Usually when peppers are finely chopped, they do not need to be skinned.
+
+<br><br>Hot peppers, such as the jalapeño, do not need to be peeled, but seeds are often removed.
+
+<br><br>If you choose to peel chiles, slit each pepper along the side to allow steam to escape. Peel using one of these two methods:
+
+<br><br>Oven or broiler method to blister skins - Place chiles in a hot oven (400°F) or broiler for 6 to 8 minutes until skins blister.
+ 
+<br><br>Range-top method to blister skins - Cover hot burner (either gas or electric) with heavy wire mesh. Place peppers on burner for several minutes until skins blister.
+ 
+<br><br>To peel, after blistering skins, place peppers in a pan and cover with a damp cloth. (This will make peeling the peppers easier.) Cool several minutes; slip off skins. Discard seeds and chop.
+<br>Caution: Wear plastic or rubber gloves and do not touch your face while handling or cutting hot peppers. If you do not wear gloves, wash hands thoroughly with soap and water before touching your face or eyes.
+
+<br><br>TOMATILLOS
+<br>Tomatillos are also known as Mexican husk tomatoes. They do not need to be peeled or seeded, but the dry outer husk must be removed.
+
+<br><br>ACIDS
+<br>The acid ingredients used in salsa help preserve it. You must add acid to canned salsas because the natural acidity may not be high enough. Commonly used acids in home canning are vinegar and lemon juice. Lemon juice is more acidic than vinegar, but has less effect on flavor. Use only vinegar that is at least 5% acid and use only commercially bottled lemon juice.
+
+<br><br>If you wish, you may safely substitute an equal amount of lemon juice for vinegar in recipes using vinegar. Do not substitute vinegar for lemon juice. This substitution will result in a less acid and potentially unsafe salsa.
+
+<br><br>SPICES
+<br>Spices add flavoring to salsas. The amounts of spices and herbs may be altered in these recipes. Cilantro and cumin are often used in spicy salsas. You may leave them out if you prefer a salsa with a milder taste. For a stronger cilantro flavor, add fresh cilantro just before serving the salsa.
+
+<br><br>IMPORTANT: Follow the directions carefully for each recipe. Use the amounts of each vegetable listed in the recipe. Add the amount of vinegar or lemon juice listed. You may change the amount of spices, if desired. Do not can salsas that do not follow these or other research tested recipes. (They may be frozen or stored in the refrigerator.) Do not thicken salsas with flour or cornstarch before canning. After you open a jar to use, you may pour off some of the liquid or thicken with cornstarch. Store in the refrigerator once opened.</p>
+                 `;
+             }
+             else if (section === 'Choice Salsa') {
+                 content.innerHTML = `
+                     <h1>Choice Salsa</h1>
+                     <p><br>6 cups peeled, cored, seeded and chopped ripe tomatoes
+<br>9 cups diced onions and/or peppers of any variety (See Notes below)
+<br>1 and ½ cups commercially bottled lemon or lime juice
+<br>3 teaspoons canning or pickling salt
+<br><br>Yield: About 6 pint jars
+
+<br><br>CAUTION:  Wear plastic or rubber gloves and do not touch your face while handling or cutting hot peppers.  If you do not wear gloves, wash hands thoroughly with soap and water before touching your face or eyes. 
+
+<br>Please read Using Boiling Water Canners for steps in managing the process before using this recipe.
+
+<br><br>Procedure:
+
+<br>To prepare onions: Peel, wash, core and dice onions (¼-inch pieces).
+
+<br><br>To prepare bell peppers: Wash and core bell peppers.  Remove the seeds and membranes before dicing (¼-inch pieces).
+
+<br><br>To prepare hot peppers: Wash and remove stems of hot peppers.  Keep or remove as much of the seeds and membranes as you wish, depending on the ‘pepper heat’ of the salsa that you desire. Dice peppers (¼-inch pieces).
+
+<br><br>Wash and rinse pint or half-pint canning jars; keep hot until ready to fill.  Prepare lids and ring bands according to manufacturer’s directions.
+<br><br>To prepare tomatoes: Dip washed tomatoes in boiling water for 30 to 60 seconds or until the skins split. Submerge immediately in cold water. Peel off loosened skins and remove cores.  Remove seeds and chop (¼- to ½-inch pieces).
+<br>Combine prepared ingredients in a large pot; add lemon juice and salt. Bring to a boil over medium heat while stirring. Reduce heat and simmer salsa for an additional 3 minutes, stirring as needed to prevent scorching.
+<br>Fill the hot salsa into prepared hot jars, leaving 1/2-inch headspace.  If needed, remove air bubbles and re-adjust headspace to ½-inch. Wipe rims of jars with a dampened clean paper towel.  Adjust lids and bands.  
+<br>Process in a boiling water canner according to the recommendations in Table 1.  Let cool, undisturbed, 12 to 24 hours and check for seals.
+<br><br>Notes:  This is a fairly acidic salsa, but was tested with a wide variety of tomatoes, peppers and onions to ensure the necessary acidification for boiling water canning and still allow for some consumer choice in the ingredients.
+
+<br><br>The peppers used may be sweet bell peppers (of any color) and/or hot peppers. 
+
+<br><br>The purpose of the commercially bottled lemon or lime juice is to standardize a minimum level of acidity in the recipe.  For the purposes of our testing, we used lemon juice as it was deemed the most acceptable flavor for the proportions in this particular recipe. For safety reasons, do not substitute vinegar for the lemon or lime juice. Do not use bottled key lime juice.
+
+<br><br>Do not alter the proportions of tomatoes, vegetables and acid because that might make the salsa unsafe when this canning process is used. The chopped tomatoes and diced peppers and/or onions are to be measured level in dry measuring cups; the lemon or lime juice is measured in a liquid measuring cup.  We did not test other vegetables for flavor or acidity.
+
+<br><br>Additional Note:  Refrigerate any leftover salsa after filling jars, and enjoy freshly made!  Refrigerate the canned salsa once jars are opened for use.
+
+</p>
+                 `;
+             }
+
+             else if (section === 'Beans, Baked') {
+                 content.innerHTML = `
+                     <h1>Beans, Baked</h1>
+                     <p>Quantity: An average of 5 pounds of beans is needed per canner load of 7 quarts; an average of 3¼ pounds is needed per canner load of 9 pints – an average of ¾ pounds per quart.
+
+<br><br>Quality: Select mature, dry seeds. Sort out and discard discolored seeds.
+
+<br><br>Please read Using Pressure Canners before beginning. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>Procedure: Soak and boil beans as follows – Sort and wash dry beans. Add 3 cups of water for each cup of dried beans or peas. Boil 2 minutes, remove from heat and soak 1 hour and drain. Heat to boiling in fresh water, and save liquid for making sauce.
+
+<br><br>Prepare molasses sauce as follows – Mix 4 cups water or cooking liquid from beans, 3 tablespoons dark molasses, 1 tablespoon vinegar, 2 teaspoons salt, and ¾ teaspoon powdered dry mustard. Heat to boiling.
+
+<br><br>Place seven ¾-inch pieces of pork, ham, or bacon in an earthenware crock, a large casserole, or a pan. Add beans and enough molasses sauce to cover beans. Cover and bake 4 to 5 hours at 350ºF. Add water as needed–about every hour.
+
+<br><br>Fill jars, leaving 1-inch headspace. Adjust lids and process according to the recommendations </p>
+                 `;
+             }
+             else if (section === 'Mushrooms – Whole or Sliced') {
+                 content.innerHTML = `
+                     <h1>Mushrooms – Whole or Sliced</h1>
+                     <p>Quantity: An average of 14-1/2 pounds is neeed per canner load of 9 pints; an average of 7-1/2 pounds is needed per canner load of 9 half-pints – an average of 2 pounds per pint.
+
+<br><br>Quality: Select only brightly colored, small to medium-size domestic mushrooms with short stems, tight veils (unopened caps), and no discoloration. Caution: Do not can wild mushrooms.
+
+<br><br>Please read Using Pressure Canners before beginning. If this is your first time canning, it is recommended that you read Principles of Home Canning.
+
+<br><br>Procedure: Trim stems and discolored parts. Soak in cold water for 10 minutes to remove dirt. Wash in clean water. Leave small mushrooms whole; cut large ones. Cover with water in a saucepan and boil 5 minutes. Fill jars with hot mushrooms, leaving 1-inch headspace. Add 1/2 teaspoon of salt per pint to the jar, if desired. For better color, add 1/8 teaspoon of ascorbic acid powder, or a 500-milligram tablet of vitamin C. Add fresh hot water, leaving 1-inch headspace.</p>
+                 `;
+             }
+         }
+     </script>
+ 
+     
+ 
+     </body>
+     </html>

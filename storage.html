@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="final.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    
+        
+    <title>Document</title>
+</head>
+<body>
+            <section class="header">
+                <nav>
+                 <a href="index.html"><img class="logo"src="rv-logo.png"></a>
+                 <p class="inst-name">R V College of Engineering</p>
+                 <div class="nav-links" id="navLinks">
+                <i class="fa fa-times"onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href=""></a><b>Virtual Pantry</b></li>
+                     <li><a href=""></a><b>Preserve By</b></li>
+                     <li><a href=""></a><b>Resources</b></li>
+                     <li><a href=""></a><b>Newsflash</b></li>
+                     <li><a href=""></a><b>FAQs</b></li>
+                     <li><a href=""></a><b>Blog</b></li>
+                     <li><a href=""></a><b>Donate</b></li>
+                     <li><a href=""></a><b>Contact</b></li>
+                    
+                </ul>
+            <i class="fa fa-bars"onclick="showMenu()"></i>
+           </nav> 
+        </div>
+    
+    </section>
+    <section class="image-section">
+        
+        <div class="image-container">
+            <div class="overlay"></div>   
+            <img src="storage.jpg" alt="STORING" class="background-image">
+            <h1 class="image-heading">STORING</h1>
+        </div>
+    </section>
+
+
+
+    <section class="content-container">
+        <!-- Left menu section -->
+        <div class="menu">
+            <h2>STORING</h2>
+            <ul>
+                <li>
+                    <a href="#" onclick="toggleSubMenu('Storing general information-submenu')">Storing general information</a>
+                    <ul id="Storing general information-submenu" class="submenu">
+                        <li><a href="#" onclick="showContent('Food Storage Resources')">Food Storage Resources</a></li>
+                        <li><a href="#" onclick="showContent('Packaging and Storing Dried Foods')">Packaging and Storing Dried Foods</a></li>
+                    </ul>
+
+
+                
+                <li><a href="#" onclick="showContent('Resources for Food Emergencies')">Resources for Food Emergencies</a></li>
+                
+            </ul>
+        </div>
+
+        <!-- Right content section -->
+        <div class="content" id="content">
+            <h1>STORING</h1>
+            <p>Storing foods is an essential aspect of food preservation and management. Proper food storage aims to maintain the quality, safety, and shelf life of food items while minimizing waste. It involves a combination of techniques and technologies that encompass factors like temperature control, humidity, packaging, and the use of preservatives. Refrigeration and freezing are common methods for preserving the freshness of foods, while canning, drying, and pickling are employed to extend shelf life. Moreover, the choice of packaging materials plays a crucial role in preventing contamination and spoilage. Understanding the science behind these storage methods, including the role of microorganisms, enzymes, and chemical reactions, is integral to ensuring food safety and minimizing food loss. In today's world, where food security and sustainability are paramount, the science of storing foods is at the forefront of addressing global challenges, emphasizing both food safety and security.</p>
+        </div>
+    </section>
+
+    <script>
+        function toggleSubMenu(id) {
+            const submenu = document.getElementById(id);
+            submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function showContent(section) {
+            const content = document.getElementById('content');
+            if (section === 'Food Storage Resources') {
+                content.innerHTML = `
+                    <h1>Food Storage Resources</h1>
+                    <h2>Storing Home Canned Foods</h2>
+                    <p>These three options are for two-piece metal lid system with a flat lid and a ring band.  If you use another type, follow the manufacturer's directions for determining if jars are vacuum sealed.
+
+<br><br>After cooling jars for 12 to 24 hours, remove the ring bands and test seals with one of the following options:
+
+<br><br>Option 1: Press the middle of the lid with a finger or thumb. If the lid springs up when you release your finger, the lid is unsealed.
+
+<br><br>Option 2: Tap the lid with the bottom of a teaspoon. If it makes a dull sound, the lid is not sealed. If food is in contact with the underside of the lid, it will also cause a dull sound. If the jar is sealed correctly, it will make a ringing, high-pitched sound.
+
+<br><br>Option 3: Hold the jar at eye level and look across the lid. The lid should be concave (curved down slightly in the center). If center of the lid is either flat or bulging, it may not be sealed.
+
+<br><br>REPROCESSING UNSEALED JARS
+<br>Sometimes a jar in a canner load fails to seal upon cooling. This may happen because of a cracked or nicked jar, or perhaps because food is fouling the jar rim where the lid sits. Due to loss of quality, reprocessing of jars is not recommended.
+
+<br><br>If you do reprocess, follow these steps for a safe product:
+
+<br>1. Re-process within 24 hours. For a safe final product, you must have followed an up-to-date research-tested recipe on your first attempt, and you must reprocess within 24 hours.
+
+<br>2. Remove the lid and empty the contents of the jar into a large pot and heat to boiling.
+
+<br>3. Fill a clean jar with the heated food, remove air bubbles, and top with a new lid.
+
+<br>4. Reprocess using a tested recipe for a hot-pack product.  If there is no tested hot-pack recipe, the product may not be safely reprocessed.
+
+<br><br>If you did not follow a tested recipe on the first try, all jars, sealed or unsealed, may be unsafe and should be discarded. 
+
+<br><br>To preserve quality of food where jars failed to seal (and discovered within 24 hours of initial canning), refrigerate the jars and consume contents within one week. Unsealed jars may also be frozen for up to one year, be sure to adjust headspace to 1” before freezing.
+
+<br><br>STORING CANNED FOODS
+<br>If lids are tightly vacuum sealed on cooled jars, remove ring bands, wash the lid and jar to remove food residue without disturbing the sealed lid; then rinse and dry jars. There may be food or syrup residues you might not notice with your eye.  These residues can support the growth of molds (which are airborne) outside the jar during storage. Wash and dry ring bands to protect them from corrosion for future use; be sure to protect from moisture where they are kept. It is recommended that jars be stored without ring bands to keep them dry as well as to allow for easier detection of any broken vacuum seals. However, if you choose to re-apply the ring bands, make sure all surfaces are clean and thoroughly dry first.
+
+<br><br>If jars are stacked in storage, be careful not to disturb vacuum seals. It would be a good idea to not stack jars too high directly on top of each other; one manufacturer recommends no more than two layers high. It would be best to provide support between the layers as a preventive measure against disturbing the seals on the lower jars. Jars could be placed in boxes to be stacked, or use some type of a firm solid material across the jars as a supportive layer in between them.
+
+<br><br>Label and date the jars and store them in a clean, cool, dark, dry place. For best quality, store between 50 and 70 °F. Also for best quality, can no more food than you will use within a year unless directions for a specific food provide other advice.
+
+<br><br>Do not store jars above 95° F or near hot pipes, a range, a furnace, in an uninsulated attic, or in direct sunlight. Under these conditions, food will lose quality in a few weeks or months and may spoil. Dampness may corrode metal lids, break seals, and allow recontamination and spoilage.
+
+<br><br>Accidental freezing of canned foods will not cause spoilage unless jars become unsealed and recontaminated. However, freezing and thawing may soften food. If jars must be stored where they may freeze, wrap them in newspapers, place them in heavy cartons, and cover with more newspapers and blankets.
+
+<br><br>TDENTIFYING AND HANDLING SPOILED CANNED FOOD
+<br>Do not taste food from a jar with an unsealed lid or food that shows signs of spoilage. You can more easily detect some types of spoilage in jars stored without screw bands. Growth of spoilage bacteria and yeast produces gas which pressurizes the food, swells lids, and breaks jar seals. As each stored jar is selected for use, examine its lid for tightness and vacuum. Lids with concave centers have good seals.
+
+<br><br>Next, while holding the jar upright at eye level, rotate the jar and examine its outside surface for streaks of dried food originating at the top of the jar. Look at the contents for rising air bubbles and unnatural color.
+
+<br><br>While opening the jar, smell for unnatural odors and look for spurting liquid and cotton-like mold growth (white, blue, black, or green) on the top food surface and underside of lid.
+
+<br><br>Spoiled low-acid foods, including tomatoes, may exhibit different kinds of spoilage evidence or very little evidence. Therefore, all suspect containers of spoiled low-acid foods, including tomatoes, should be treated as having produced botulinum toxin and handled carefully in one of two ways:
+
+<br>If the swollen metal cans or suspect glass jars are still sealed, place them in a heavy garbage bag. Close and place the bag in a regular trash container or dispose in a nearby landfill.
+<br>If the suspect cans or glass jars are unsealed, open, or leaking, they should be detoxified before disposal.
+<br>Detoxification process: Wear disposable rubber or heavy plastic gloves. Carefully place the suspect containers and lids on their sides in an 8-quart volume or larger stock pot, pan, or boiling-water canner. Wash your hands with gloves thoroughly. Carefully add water to the pot and avoid splashing the water. The water should completely cover the containers with a minimum of a 1-inch level above the containers. Place a lid on the pot and heat the water to boiling. Boil 30 minutes to ensure detoxifying the food and all container components. Cool and discard the containers, their lids, and food in the trash or dispose in a nearby landfill.
+
+<br><br>Cleaning up the area: Contact with botulinum toxin can be fatal whether it is ingested or enters through the skin. Take care to avoid contact with suspect foods or liquids. Wear rubber or heavy plastic gloves when handling suspect foods or cleaning up contaminated work surfaces and equipment. A fresh solution of 1 part unscented liquid household chlorine bleach (5 to 6% sodium hypochlorite) to 5 parts clean water should be used to treat work surfaces, equipment, or other items, including can openers and clothing, that may have come in contact with suspect foods or liquids. Spray or wet contaminated surfaces with the bleach solution and let stand for 30 minutes. Wearing gloves, wipe up treated spills with paper towels being careful to minimize the spread of contamination. Dispose of these paper towels by placing them in a plastic bag before putting them in the trash. Next, apply the bleach solution to all surfaces and equipment again, and let stand for 30 minutes and rinse. As a last step, thoroughly wash all detoxified counters, containers, equipment, clothing, etc. Discard gloves when cleaning process is complete. (Note: Bleach is an irritant itself and should not be inhaled or allowed to come in contact with the skin.)
+
+ 
+
+<br><br>Adapted from the "Complete Guide to Home Canning," Agriculture Information Bulletin No. 539, USDA (Revised 2015), Guide 1, pp. 1-25 to 1-27, and "So Easy to Preserve", 6th ed., p. 34.</p>
+                `;
+            
+            
+            
+            } else if (section === 'Packaging and Storing Dried Foods') {
+                content.innerHTML = `
+                    <h1>Packaging and Storing Dried Foods</h1>
+                    <p>Dried foods are susceptible to insect contamination and moisture reabsorption and must be properly packaged and stored immediately. First, cool completely. Warm food causes sweating which could provide enough moisture for mold to grow. Pack foods into clean, dry insect-proof containers as tightly as possible without crushing.
+
+<br><br>Store dried foods in clean, dry home canning jars, plastic freezer containers with tight-fitting lids or in plastic freezer bags. Vacuum packaging is also a good option. Pack foods in amounts that can be used all at once. Each time a package is re-opened, the food is exposed to air and moisture that can lower the quality of the food and result in spoilage.
+
+<br><br>Pack food in amounts that will be used in a recipe. Every time a package is re-opened, the food is exposed to air and moisture that lower the quality of the food.
+
+<br><br>Fruit that has been sulfured should not touch metal. Place the fruit in a plastic bag before storing it in a metal can. Sulfur fumes will react with the metal and cause color changes in the fruit.
+
+<br><br>Dried foods should be stored in cool, dry, dark areas. Recommended storage times for dried foods range from 4 months to 1 year. Because food quality is affected by heat, the storage temperature helps determine the length of storage; the higher the temperature, the shorter the storage time. Most dried fruits can be stored for 1 year at 60ºF, 6 months at 80ºF. Vegetables have about half the shelf-life of fruits.
+
+<br><br>Foods that are packaged seemingly "bone dry" can spoil if moisture is reabsorbed during storage. Check dried foods frequently during storage to see if they are still dry. Glass containers are excellent for storage because any moisture that collects on the inside can be seen easily. Foods affected by moisture, but not spoiled, should be used immediately or redried and repackaged. Moldy foods should be discarded.
+
+<br><br>CONDITIONING FRUITS
+<br>The moisture content of home dried fruit should be about 20 percent. When the fruit is taken from the dehydrator, the remaining moisture may not be distributed equally among the pieces because of their size or their location in the dehydrator. Conditioning is the process used to equalize the moisture. It reduces the risk of mold growth.
+
+<br><br>To condition the fruit, take the dried fruit that has cooled and pack it loosely in plastic or glass jars. Seal the containers and let them stand for 7 to 10 days. The excess moisture in some pieces will be absorbed by the drier pieces. Shake the jars daily to separate the pieces and check the moisture condensation. If condensation develops in the jar, return the fruit to the dehydrator for more drying. After conditioning, package and store the fruit as described above.
+
+<br><br>DETERMINING DRYNESS OF VEGETABLES
+<br>Vegetables should be dried until they are brittle or "crisp." Some vegetables actually shatter if hit with a hammer. At this stage, they should contain about 10 percent moisture. Because they are so dry, they do not need conditioning like fruits.
+
+ 
+
+<br><br>This document was extracted from "So Easy to Preserve", 6th ed. 2014. Bulletin 989, Cooperative Extension Service, The University of Georgia, Athens. Revised by Elizabeth L. Andress. Ph.D. and Judy A. Harrison, Ph.D., Extension Foods Specialists.
+
+</p>
+                `;
+            } else if (section === 'Resources for Food Emergencies') {
+                content.innerHTML = `
+                    <h1>Resources for Food Emergencies</h1>
+                    <p>Utah State University Extension: A Guide to Food Storage for Emergencies
+
+<br><br>FoodSafety.gov: Food Safety in a Disaster or Emergency
+
+<br><br>NC State Extension: Foods to Keep and Discard After a Power Outage
+
+<br><br>NC State Extension: Infant Food Safety During a Power Outage
+
+<br><br>University of Georgia: Preserving Food: What to do if the Freezer Stops</p>
+                `;
+            } 
+        }
+    </script>
+
+    
+
+    </body>
+    </html>
